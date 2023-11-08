@@ -5,6 +5,9 @@ from ui.station_ur_widget import Ui_StationUrWidget
 from ui.mir_dashboard_widget import Ui_MirDashboardWidget
 from ui.mission_dashboard_widget import Ui_MissionDashboardWidget
 
+from ui.MirUiInterface import MirUiInterface
+from ui.UrUiInterface import UrUiInterface
+
 # from ui.resources import resources_rc
 
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QWidget
@@ -13,26 +16,32 @@ from PyQt5.QtCore import pyqtSignal, pyqtSlot
 from modules.Logger import Logger
 from modules.rich_setup import *
 
-from modules.modbus import Modbus
+from modules.Database import Database
+from modules.UrInterface import UrInterface
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         # ############################## #
 
-        ### Logger ###
+        ##### Logger #####
         self.logger = Logger("mainwindow")
         self.logger.debug("Initialzing ...")
 
-        ### Mainwindow ###
+        ##### Mainwindow #####
         QMainWindow.__init__(self)
         self.setupUi(self)
         # self.setGeometry(0, 25, self.width(), self.height())
 
-        ### Actions ###
+        ##### Modules #####
+        self.DATABASE = Database()
+        self.urInterface_1 = UrInterface("urInterface_1")
+
+        ##### Actions #####
+        self.actionFile_load.triggered.connect(self.DATABASE.load)
         self.actionFile_exit.triggered.connect(QApplication.instance().quit)
 
-        ### UIs ###
+        ##### UIs #####
         ## Dashboard
         # Station 0
         self.stationUrWidget_0 = QWidget()
@@ -64,15 +73,61 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ui_mirDashboardWidget.setupUi(self.mirDashboardWidget)
         self.verticalLayout_groupBox_mir.addWidget(self.mirDashboardWidget)
 
-        # Test mission queue
-        # self.missionDashboardWidget = QWidget()
-        # ui_missionDashboardWidget = Ui_MissionDashboardWidget()
-        # ui_missionDashboardWidget.setupUi(self.missionDashboardWidget)
-        # # self.missionQueueSrollArea = (
-        # ui_mirDashboardWidget.scrollArea_mission_queue_layout.addWidget(
-        #     self.missionDashboardWidget
+        ## Setting
+        self.mirUiInterface = MirUiInterface(MAINWINDOW_=self)
+        self.urUiInterfaceStation_1 = UrUiInterface(
+            #
+            name_="UR UI Interface #1",
+            station_NO_=1,
+            urInterface_=self.urInterface_1,
+            #
+            MAINWINDOW_=self,
+            #
+            input_ip_=self.lineEdit_ur_station_1_ip,
+            input_freq_=self.lineEdit_setting_ur_freq,
+            btn_connect_=self.pushButton_ur_station_1_connect,
+            #
+            comboBox_feed_in_type_8266_=self.comboBox_station_1_feed_in_sensor_type_8266,
+            comboBox_feed_in_type_32_=self.comboBox_station_1_feed_in_sensor_type_32,
+            comboBox_feed_in_NO_8266_=self.comboBox_station_1_feed_in_sensor_NO_8266,
+            comboBox_feed_in_NO_32_=self.comboBox_station_1_feed_in_sensor_NO_32,
+            comboBox_feed_out_type_8266_=self.comboBox_station_1_feed_out_sensor_type_8266,
+            comboBox_feed_out_type_32_=self.comboBox_station_1_feed_out_sensor_type_32,
+            comboBox_feed_out_NO_8266_=self.comboBox_station_1_feed_out_sensor_NO_8266,
+            comboBox_feed_out_NO_32_=self.comboBox_station_1_feed_out_sensor_NO_32,
+        )
+        # self.urUiInterfaceStation_2 = UrUiInterface(
+        #     #
+        #     name_="UR UI Interface #2",
+        #     #
+        #     MAINWINDOW_=self,
+        #     #
+        #     input_ip_=self.lineEdit_ur_station_2_ip,
+        #     input_freq_=self.lineEdit_setting_ur_freq,
+        #     btn_connect_=self.pushButton_ur_station_2_connect,
+        #     #
+        #     comboBox_feed_in_input_type_=self.comboBox_station_2_feed_in_ur_input_type,
+        #     comboBox_feed_out_input_type_=self.comboBox_station_2_feed_out_ur_input_type,
+        #     comboBox_feed_in_input_NO_=self.comboBox_station_2_feed_in_ur_input_NO,
+        #     comboBox_feed_out_input_NO_=self.comboBox_station_2_feed_out_ur_input_NO,
+        # )
+        # self.urUiInterfaceStation_3 = UrUiInterface(
+        #     #
+        #     name_="UR UI Interface #3",
+        #     #
+        #     MAINWINDOW_=self,
+        #     #
+        #     input_ip_=self.lineEdit_ur_station_3_ip,
+        #     input_freq_=self.lineEdit_setting_ur_freq,
+        #     btn_connect_=self.pushButton_ur_station_3_connect,
+        #     #
+        #     comboBox_feed_in_input_type_=self.comboBox_station_3_feed_in_ur_input_type,
+        #     comboBox_feed_out_input_type_=self.comboBox_station_3_feed_out_ur_input_type,
+        #     comboBox_feed_in_input_NO_=self.comboBox_station_3_feed_in_ur_input_NO,
+        #     comboBox_feed_out_input_NO_=self.comboBox_station_3_feed_out_ur_input_NO,
         # )
 
+        self.DATABASE.load()
         ### Modules ###
 
         ### Signal/SLot ###

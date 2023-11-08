@@ -14,22 +14,22 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(939, 875)
+        MainWindow.resize(939, 890)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName("tabWidget")
-        self.tab = QtWidgets.QWidget()
-        self.tab.setObjectName("tab")
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.tab)
+        self.tab_dashboard = QtWidgets.QWidget()
+        self.tab_dashboard.setObjectName("tab_dashboard")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.tab_dashboard)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
-        self.groupBox_station_0 = QtWidgets.QGroupBox(self.tab)
+        self.groupBox_station_0 = QtWidgets.QGroupBox(self.tab_dashboard)
         self.groupBox_station_0.setObjectName("groupBox_station_0")
         self.verticalLayout_10 = QtWidgets.QVBoxLayout(self.groupBox_station_0)
         self.verticalLayout_10.setObjectName("verticalLayout_10")
@@ -37,7 +37,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_groupBox_station_0.setObjectName("verticalLayout_groupBox_station_0")
         self.verticalLayout_10.addLayout(self.verticalLayout_groupBox_station_0)
         self.verticalLayout.addWidget(self.groupBox_station_0)
-        self.groupBox_station_1 = QtWidgets.QGroupBox(self.tab)
+        self.groupBox_station_1 = QtWidgets.QGroupBox(self.tab_dashboard)
         self.groupBox_station_1.setObjectName("groupBox_station_1")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.groupBox_station_1)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
@@ -45,7 +45,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_groupBox_station_1.setObjectName("verticalLayout_groupBox_station_1")
         self.verticalLayout_7.addLayout(self.verticalLayout_groupBox_station_1)
         self.verticalLayout.addWidget(self.groupBox_station_1)
-        self.groupBox_station_2 = QtWidgets.QGroupBox(self.tab)
+        self.groupBox_station_2 = QtWidgets.QGroupBox(self.tab_dashboard)
         self.groupBox_station_2.setObjectName("groupBox_station_2")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.groupBox_station_2)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
@@ -53,7 +53,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_groupBox_station_2.setObjectName("verticalLayout_groupBox_station_2")
         self.verticalLayout_8.addLayout(self.verticalLayout_groupBox_station_2)
         self.verticalLayout.addWidget(self.groupBox_station_2)
-        self.groupBox_station_3 = QtWidgets.QGroupBox(self.tab)
+        self.groupBox_station_3 = QtWidgets.QGroupBox(self.tab_dashboard)
         self.groupBox_station_3.setObjectName("groupBox_station_3")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.groupBox_station_3)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
@@ -64,7 +64,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addLayout(self.verticalLayout)
         self.verticalLayout_4 = QtWidgets.QVBoxLayout()
         self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.groupBox_mir = QtWidgets.QGroupBox(self.tab)
+        self.groupBox_mir = QtWidgets.QGroupBox(self.tab_dashboard)
         self.groupBox_mir.setObjectName("groupBox_mir")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.groupBox_mir)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
@@ -74,17 +74,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.groupBox_mir)
         self.horizontalLayout.addLayout(self.verticalLayout_4)
         self.verticalLayout_3.addLayout(self.horizontalLayout)
-        self.tabWidget.addTab(self.tab, "")
-        self.tab_2 = QtWidgets.QWidget()
-        self.tab_2.setObjectName("tab_2")
-        self.tabWidget.addTab(self.tab_2, "")
-        self.tab_3 = QtWidgets.QWidget()
-        self.tab_3.setObjectName("tab_3")
-        self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.tab_3)
+        self.tabWidget.addTab(self.tab_dashboard, "")
+        self.tab_setting = QtWidgets.QWidget()
+        self.tab_setting.setObjectName("tab_setting")
+        self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.tab_setting)
         self.verticalLayout_11.setObjectName("verticalLayout_11")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout()
         self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.groupBox = QtWidgets.QGroupBox(self.tab_3)
+        self.groupBox = QtWidgets.QGroupBox(self.tab_setting)
         self.groupBox.setObjectName("groupBox")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.groupBox)
         self.gridLayout_2.setObjectName("gridLayout_2")
@@ -94,7 +91,7 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
         self.lineEdit_setting_mir_password = QtWidgets.QLineEdit(self.groupBox)
-        self.lineEdit_setting_mir_password.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_setting_mir_password.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -105,7 +102,7 @@ class Ui_MainWindow(object):
         self.lineEdit_setting_mir_password.setObjectName("lineEdit_setting_mir_password")
         self.gridLayout.addWidget(self.lineEdit_setting_mir_password, 2, 1, 1, 1)
         self.lineEdit_setting_mir_username = QtWidgets.QLineEdit(self.groupBox)
-        self.lineEdit_setting_mir_username.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_setting_mir_username.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -118,7 +115,7 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName("label_3")
         self.gridLayout.addWidget(self.label_3, 2, 0, 1, 1)
         self.lineEdit_setting_mir_ip = QtWidgets.QLineEdit(self.groupBox)
-        self.lineEdit_setting_mir_ip.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_setting_mir_ip.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -130,25 +127,38 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.groupBox)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
-        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.label_18 = QtWidgets.QLabel(self.groupBox)
-        self.label_18.setObjectName("label_18")
-        self.horizontalLayout_2.addWidget(self.label_18)
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.groupBox)
-        self.lineEdit_2.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.lineEdit_2.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.label_20 = QtWidgets.QLabel(self.groupBox)
+        self.label_20.setObjectName("label_20")
+        self.gridLayout.addWidget(self.label_20, 3, 0, 1, 1)
+        self.lineEdit_setting_mir_auth_key = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_setting_mir_auth_key.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
 "border-radius: 2px;\n"
 "selection-color: black;\n"
 "selection-background-color: #ccc;")
-        self.lineEdit_2.setText("")
-        self.lineEdit_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.horizontalLayout_2.addWidget(self.lineEdit_2)
+        self.lineEdit_setting_mir_auth_key.setObjectName("lineEdit_setting_mir_auth_key")
+        self.gridLayout.addWidget(self.lineEdit_setting_mir_auth_key, 3, 1, 1, 1)
+        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_18 = QtWidgets.QLabel(self.groupBox)
+        self.label_18.setObjectName("label_18")
+        self.horizontalLayout_2.addWidget(self.label_18)
+        self.label_setting_mir_latency = QtWidgets.QLabel(self.groupBox)
+        self.label_setting_mir_latency.setMinimumSize(QtCore.QSize(50, 0))
+        self.label_setting_mir_latency.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.label_setting_mir_latency.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.label_setting_mir_latency.setText("")
+        self.label_setting_mir_latency.setObjectName("label_setting_mir_latency")
+        self.horizontalLayout_2.addWidget(self.label_setting_mir_latency)
         self.label_19 = QtWidgets.QLabel(self.groupBox)
         self.label_19.setObjectName("label_19")
         self.horizontalLayout_2.addWidget(self.label_19)
@@ -157,18 +167,18 @@ class Ui_MainWindow(object):
         self.label_16 = QtWidgets.QLabel(self.groupBox)
         self.label_16.setObjectName("label_16")
         self.horizontalLayout_2.addWidget(self.label_16)
-        self.lineEdit = QtWidgets.QLineEdit(self.groupBox)
-        self.lineEdit.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.lineEdit.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_setting_mir_freq = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_setting_mir_freq.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.lineEdit_setting_mir_freq.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
 "border-radius: 2px;\n"
 "selection-color: black;\n"
 "selection-background-color: #ccc;")
-        self.lineEdit.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit.setObjectName("lineEdit")
-        self.horizontalLayout_2.addWidget(self.lineEdit)
+        self.lineEdit_setting_mir_freq.setAlignment(QtCore.Qt.AlignCenter)
+        self.lineEdit_setting_mir_freq.setObjectName("lineEdit_setting_mir_freq")
+        self.horizontalLayout_2.addWidget(self.lineEdit_setting_mir_freq)
         self.label_17 = QtWidgets.QLabel(self.groupBox)
         self.label_17.setObjectName("label_17")
         self.horizontalLayout_2.addWidget(self.label_17)
@@ -177,128 +187,1121 @@ class Ui_MainWindow(object):
         self.line_10.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_10.setObjectName("line_10")
         self.horizontalLayout_2.addWidget(self.line_10)
-        self.pushButton_connect_mir = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_connect_mir.setObjectName("pushButton_connect_mir")
-        self.horizontalLayout_2.addWidget(self.pushButton_connect_mir)
+        self.pushButton_setting_mir_connect = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_setting_mir_connect.setObjectName("pushButton_setting_mir_connect")
+        self.horizontalLayout_2.addWidget(self.pushButton_setting_mir_connect)
         self.gridLayout_2.addLayout(self.horizontalLayout_2, 1, 0, 1, 1)
         self.verticalLayout_6.addWidget(self.groupBox)
         self.verticalLayout_11.addLayout(self.verticalLayout_6)
-        self.groupBox_2 = QtWidgets.QGroupBox(self.tab_3)
+        self.groupBox_2 = QtWidgets.QGroupBox(self.tab_setting)
         self.groupBox_2.setObjectName("groupBox_2")
         self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.groupBox_2)
         self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem1)
+        self.label_21 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_21.setObjectName("label_21")
+        self.horizontalLayout_3.addWidget(self.label_21)
+        self.lineEdit_setting_ur_freq = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_setting_ur_freq.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.lineEdit_setting_ur_freq.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_setting_ur_freq.setAlignment(QtCore.Qt.AlignCenter)
+        self.lineEdit_setting_ur_freq.setObjectName("lineEdit_setting_ur_freq")
+        self.horizontalLayout_3.addWidget(self.lineEdit_setting_ur_freq)
+        self.label_22 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_22.setObjectName("label_22")
+        self.horizontalLayout_3.addWidget(self.label_22)
+        self.line_11 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_11.setFrameShape(QtWidgets.QFrame.VLine)
+        self.line_11.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_11.setObjectName("line_11")
+        self.horizontalLayout_3.addWidget(self.line_11)
+        self.pushButton_setting_ur_connect_all = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_setting_ur_connect_all.setObjectName("pushButton_setting_ur_connect_all")
+        self.horizontalLayout_3.addWidget(self.pushButton_setting_ur_connect_all)
+        self.pushButton_setting_ur_disconnect_all = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_setting_ur_disconnect_all.setObjectName("pushButton_setting_ur_disconnect_all")
+        self.horizontalLayout_3.addWidget(self.pushButton_setting_ur_disconnect_all)
+        self.verticalLayout_12.addLayout(self.horizontalLayout_3)
         self.gridLayout_3 = QtWidgets.QGridLayout()
         self.gridLayout_3.setObjectName("gridLayout_3")
-        self.line_8 = QtWidgets.QFrame(self.groupBox_2)
-        self.line_8.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line_8.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line_8.setObjectName("line_8")
-        self.gridLayout_3.addWidget(self.line_8, 8, 1, 1, 1)
-        self.comboBox_station_3_place = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_3_place.setObjectName("comboBox_station_3_place")
-        self.gridLayout_3.addWidget(self.comboBox_station_3_place, 10, 2, 1, 1)
-        self.label_5 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_5.setObjectName("label_5")
-        self.gridLayout_3.addWidget(self.label_5, 3, 0, 1, 1)
+        self.line_17 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_17.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_17.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_17.setObjectName("line_17")
+        self.gridLayout_3.addWidget(self.line_17, 13, 4, 1, 1)
+        self.comboBox_station_3_feed_in_sensor_type_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_in_sensor_type_8266.setObjectName("comboBox_station_3_feed_in_sensor_type_8266")
+        self.comboBox_station_3_feed_in_sensor_type_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_type_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_in_sensor_type_8266, 19, 6, 1, 1)
+        self.label_66 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_66.setObjectName("label_66")
+        self.gridLayout_3.addWidget(self.label_66, 15, 1, 1, 1)
+        self.line_53 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_53.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_53.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_53.setObjectName("line_53")
+        self.gridLayout_3.addWidget(self.line_53, 18, 7, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_14.setObjectName("label_14")
+        self.gridLayout_3.addWidget(self.label_14, 14, 0, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout_3.addWidget(self.label_4, 4, 1, 1, 1)
+        self.label_30 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_30.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_30.setObjectName("label_30")
+        self.gridLayout_3.addWidget(self.label_30, 2, 0, 1, 1)
+        self.label_61 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_61.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_61.setObjectName("label_61")
+        self.gridLayout_3.addWidget(self.label_61, 2, 7, 1, 1)
+        self.line_48 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_48.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_48.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_48.setObjectName("line_48")
+        self.gridLayout_3.addWidget(self.line_48, 3, 7, 1, 1)
         self.line_2 = QtWidgets.QFrame(self.groupBox_2)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
-        self.gridLayout_3.addWidget(self.line_2, 5, 0, 1, 1)
-        self.line_7 = QtWidgets.QFrame(self.groupBox_2)
-        self.line_7.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line_7.setObjectName("line_7")
-        self.gridLayout_3.addWidget(self.line_7, 5, 2, 1, 1)
-        self.comboBox_station_3_pick = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_3_pick.setObjectName("comboBox_station_3_pick")
-        self.gridLayout_3.addWidget(self.comboBox_station_3_pick, 9, 2, 1, 1)
-        self.line_6 = QtWidgets.QFrame(self.groupBox_2)
-        self.line_6.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line_6.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line_6.setObjectName("line_6")
-        self.gridLayout_3.addWidget(self.line_6, 5, 1, 1, 1)
-        self.comboBox_station_2_pick = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_2_pick.setObjectName("comboBox_station_2_pick")
-        self.gridLayout_3.addWidget(self.comboBox_station_2_pick, 6, 2, 1, 1)
-        self.line_4 = QtWidgets.QFrame(self.groupBox_2)
-        self.line_4.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line_4.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line_4.setObjectName("line_4")
-        self.gridLayout_3.addWidget(self.line_4, 2, 1, 1, 1)
-        self.label_7 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_7.setObjectName("label_7")
-        self.gridLayout_3.addWidget(self.label_7, 0, 0, 1, 1)
-        self.label_15 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_15.setObjectName("label_15")
-        self.gridLayout_3.addWidget(self.label_15, 10, 1, 1, 1)
-        self.label_12 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_12.setObjectName("label_12")
-        self.gridLayout_3.addWidget(self.label_12, 4, 1, 1, 1)
-        self.label_9 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_9.setObjectName("label_9")
-        self.gridLayout_3.addWidget(self.label_9, 6, 1, 1, 1)
-        self.line_3 = QtWidgets.QFrame(self.groupBox_2)
-        self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line_3.setObjectName("line_3")
-        self.gridLayout_3.addWidget(self.line_3, 2, 0, 1, 1)
-        self.comboBox_station_0_pick = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_0_pick.setObjectName("comboBox_station_0_pick")
-        self.gridLayout_3.addWidget(self.comboBox_station_0_pick, 0, 2, 1, 1)
-        self.comboBox_station_2_place = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_2_place.setObjectName("comboBox_station_2_place")
-        self.gridLayout_3.addWidget(self.comboBox_station_2_place, 7, 2, 1, 1)
-        self.comboBox_station_0_place = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_0_place.setObjectName("comboBox_station_0_place")
-        self.gridLayout_3.addWidget(self.comboBox_station_0_place, 1, 2, 1, 1)
-        self.comboBox_station_1_pick = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_1_pick.setObjectName("comboBox_station_1_pick")
-        self.gridLayout_3.addWidget(self.comboBox_station_1_pick, 3, 2, 1, 1)
-        self.label_14 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_14.setObjectName("label_14")
-        self.gridLayout_3.addWidget(self.label_14, 6, 0, 1, 1)
-        self.comboBox_station_1_place = QtWidgets.QComboBox(self.groupBox_2)
-        self.comboBox_station_1_place.setObjectName("comboBox_station_1_place")
-        self.gridLayout_3.addWidget(self.comboBox_station_1_place, 4, 2, 1, 1)
-        self.label_4 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_4.setObjectName("label_4")
-        self.gridLayout_3.addWidget(self.label_4, 0, 1, 1, 1)
-        self.label_11 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_11.setObjectName("label_11")
-        self.gridLayout_3.addWidget(self.label_11, 9, 1, 1, 1)
-        self.label_6 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_6.setObjectName("label_6")
-        self.gridLayout_3.addWidget(self.label_6, 1, 1, 1, 1)
-        self.label_10 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_10.setObjectName("label_10")
-        self.gridLayout_3.addWidget(self.label_10, 7, 1, 1, 1)
-        self.label_8 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_8.setObjectName("label_8")
-        self.gridLayout_3.addWidget(self.label_8, 9, 0, 1, 1)
-        self.line = QtWidgets.QFrame(self.groupBox_2)
-        self.line.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line.setObjectName("line")
-        self.gridLayout_3.addWidget(self.line, 8, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.line_2, 13, 0, 1, 1)
+        self.line_14 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_14.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_14.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_14.setObjectName("line_14")
+        self.gridLayout_3.addWidget(self.line_14, 8, 4, 1, 1)
+        self.label_69 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_69.setObjectName("label_69")
+        self.gridLayout_3.addWidget(self.label_69, 19, 1, 1, 1)
+        self.line_51 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_51.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_51.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_51.setObjectName("line_51")
+        self.gridLayout_3.addWidget(self.line_51, 13, 7, 1, 1)
+        self.line_45 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_45.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_45.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_45.setObjectName("line_45")
+        self.gridLayout_3.addWidget(self.line_45, 3, 4, 1, 1)
         self.line_5 = QtWidgets.QFrame(self.groupBox_2)
         self.line_5.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_5.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_5.setObjectName("line_5")
-        self.gridLayout_3.addWidget(self.line_5, 2, 2, 1, 1)
+        self.gridLayout_3.addWidget(self.line_5, 8, 5, 1, 1)
+        self.comboBox_station_1_feed_in_sensor_NO_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setObjectName("comboBox_station_1_feed_in_sensor_NO_8266")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_in_sensor_NO_8266, 9, 7, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_1 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_1.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_1.setText("")
+        self.lineEdit_mir_modbus_addr_NO_1.setObjectName("lineEdit_mir_modbus_addr_NO_1")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_1, 4, 4, 1, 1)
+        self.line_16 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_16.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_16.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_16.setObjectName("line_16")
+        self.gridLayout_3.addWidget(self.line_16, 13, 3, 1, 1)
+        self.line_42 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_42.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_42.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_42.setObjectName("line_42")
+        self.gridLayout_3.addWidget(self.line_42, 3, 1, 1, 1)
+        self.label_63 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_63.setObjectName("label_63")
+        self.gridLayout_3.addWidget(self.label_63, 6, 1, 1, 1)
+        self.line = QtWidgets.QFrame(self.groupBox_2)
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.gridLayout_3.addWidget(self.line, 18, 0, 1, 1)
+        self.comboBox_station_1_feed_in_sensor_NO_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_in_sensor_NO_32.setObjectName("comboBox_station_1_feed_in_sensor_NO_32")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_NO_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_in_sensor_NO_32, 10, 7, 1, 1)
+        self.label_27 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_27.setStyleSheet("background-color: rgb(3, 169, 244);")
+        self.label_27.setText("")
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_3.addWidget(self.label_27, 1, 4, 1, 1)
+        self.label_64 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_64.setObjectName("label_64")
+        self.gridLayout_3.addWidget(self.label_64, 10, 1, 1, 1)
+        self.line_21 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_21.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_21.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_21.setObjectName("line_21")
+        self.gridLayout_3.addWidget(self.line_21, 8, 6, 1, 1)
+        self.label_34 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_34.setStyleSheet("background-color: rgb(63, 81, 181);\n"
+"color: rgb(255, 255, 255);\n"
+"padding: 2px 0px;")
+        self.label_34.setText("")
+        self.label_34.setObjectName("label_34")
+        self.gridLayout_3.addWidget(self.label_34, 1, 5, 1, 1)
+        self.pushButton_ur_station_1_connect = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_ur_station_1_connect.setObjectName("pushButton_ur_station_1_connect")
+        self.gridLayout_3.addWidget(self.pushButton_ur_station_1_connect, 10, 5, 1, 1)
+        self.label_15 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_15.setObjectName("label_15")
+        self.gridLayout_3.addWidget(self.label_15, 14, 1, 1, 1)
+        self.comboBox_station_3_feed_in_sensor_type_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_in_sensor_type_32.setObjectName("comboBox_station_3_feed_in_sensor_type_32")
+        self.comboBox_station_3_feed_in_sensor_type_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_type_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_in_sensor_type_32, 20, 6, 1, 1)
+        self.label_13 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_13.setObjectName("label_13")
+        self.gridLayout_3.addWidget(self.label_13, 12, 1, 1, 1)
+        self.line_6 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_6.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_6.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_6.setObjectName("line_6")
+        self.gridLayout_3.addWidget(self.line_6, 13, 1, 1, 1)
+        self.label_29 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_29.setStyleSheet("background-color: rgb(3, 169, 244);")
+        self.label_29.setText("")
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_3.addWidget(self.label_29, 1, 2, 1, 1)
+        self.label_68 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_68.setObjectName("label_68")
+        self.gridLayout_3.addWidget(self.label_68, 17, 1, 1, 1)
+        self.comboBox_station_2_feed_in_sensor_NO_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_in_sensor_NO_32.setObjectName("comboBox_station_2_feed_in_sensor_NO_32")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_in_sensor_NO_32, 15, 7, 1, 1)
+        self.line_46 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_46.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_46.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_46.setObjectName("line_46")
+        self.gridLayout_3.addWidget(self.line_46, 3, 5, 1, 1)
+        self.line_43 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_43.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_43.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_43.setObjectName("line_43")
+        self.gridLayout_3.addWidget(self.line_43, 3, 2, 1, 1)
+        self.label_23 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_23.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_23.setObjectName("label_23")
+        self.gridLayout_3.addWidget(self.label_23, 2, 1, 1, 1)
+        self.label_12 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_12.setObjectName("label_12")
+        self.gridLayout_3.addWidget(self.label_12, 9, 1, 1, 1)
+        self.label_67 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_67.setObjectName("label_67")
+        self.gridLayout_3.addWidget(self.label_67, 16, 1, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_0 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_0.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_0.setText("")
+        self.lineEdit_mir_modbus_addr_NO_0.setObjectName("lineEdit_mir_modbus_addr_NO_0")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_0, 4, 3, 1, 1)
+        self.label_62 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_62.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_62.setObjectName("label_62")
+        self.gridLayout_3.addWidget(self.label_62, 2, 6, 1, 1)
+        self.line_18 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_18.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_18.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_18.setObjectName("line_18")
+        self.gridLayout_3.addWidget(self.line_18, 18, 2, 1, 1)
+        self.label_28 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_28.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_28.setObjectName("label_28")
+        self.gridLayout_3.addWidget(self.label_28, 2, 2, 1, 1)
+        self.label_32 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_32.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_32.setObjectName("label_32")
+        self.gridLayout_3.addWidget(self.label_32, 2, 5, 1, 1)
+        self.label_65 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_65.setObjectName("label_65")
+        self.gridLayout_3.addWidget(self.label_65, 11, 1, 1, 1)
+        self.line_7 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_7.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_7.setObjectName("line_7")
+        self.gridLayout_3.addWidget(self.line_7, 13, 5, 1, 1)
+        self.label_24 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_24.setStyleSheet("background-color: rgb(3, 169, 244);\n"
+"color: rgb(255, 255, 255);\n"
+"padding: 2px 0px;")
+        self.label_24.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_24.setObjectName("label_24")
+        self.gridLayout_3.addWidget(self.label_24, 1, 3, 1, 1)
+        self.label_7 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_7.setObjectName("label_7")
+        self.gridLayout_3.addWidget(self.label_7, 4, 0, 1, 1)
+        self.line_13 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_13.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_13.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_13.setObjectName("line_13")
+        self.gridLayout_3.addWidget(self.line_13, 8, 3, 1, 1)
+        self.comboBox_station_1_feed_in_sensor_type_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_in_sensor_type_32.setObjectName("comboBox_station_1_feed_in_sensor_type_32")
+        self.comboBox_station_1_feed_in_sensor_type_32.addItem("")
+        self.comboBox_station_1_feed_in_sensor_type_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_in_sensor_type_32, 10, 6, 1, 1)
+        self.line_52 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_52.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_52.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_52.setObjectName("line_52")
+        self.gridLayout_3.addWidget(self.line_52, 18, 6, 1, 1)
+        self.label_71 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_71.setObjectName("label_71")
+        self.gridLayout_3.addWidget(self.label_71, 21, 1, 1, 1)
         self.line_9 = QtWidgets.QFrame(self.groupBox_2)
         self.line_9.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_9.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_9.setObjectName("line_9")
-        self.gridLayout_3.addWidget(self.line_9, 8, 2, 1, 1)
-        self.label_13 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_13.setObjectName("label_13")
-        self.gridLayout_3.addWidget(self.label_13, 3, 1, 1, 1)
+        self.gridLayout_3.addWidget(self.line_9, 18, 5, 1, 1)
+        self.comboBox_station_3_feed_in_sensor_NO_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_in_sensor_NO_32.setObjectName("comboBox_station_3_feed_in_sensor_NO_32")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_in_sensor_NO_32, 20, 7, 1, 1)
+        self.comboBox_station_2_feed_in_sensor_type_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_in_sensor_type_32.setObjectName("comboBox_station_2_feed_in_sensor_type_32")
+        self.comboBox_station_2_feed_in_sensor_type_32.addItem("")
+        self.comboBox_station_2_feed_in_sensor_type_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_in_sensor_type_32, 15, 6, 1, 1)
+        self.line_12 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_12.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_12.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_12.setObjectName("line_12")
+        self.gridLayout_3.addWidget(self.line_12, 8, 2, 1, 1)
+        self.label_25 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_25.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_25.setObjectName("label_25")
+        self.gridLayout_3.addWidget(self.label_25, 2, 3, 1, 1)
+        self.comboBox_station_3_feed_in_sensor_NO_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setObjectName("comboBox_station_3_feed_in_sensor_NO_8266")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_in_sensor_NO_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_in_sensor_NO_8266, 19, 7, 1, 1)
+        self.line_50 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_50.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_50.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_50.setObjectName("line_50")
+        self.gridLayout_3.addWidget(self.line_50, 13, 6, 1, 1)
+        self.label_33 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_33.setObjectName("label_33")
+        self.gridLayout_3.addWidget(self.label_33, 5, 1, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_3.addWidget(self.label_8, 19, 0, 1, 1)
+        self.comboBox_station_2_feed_in_sensor_NO_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setObjectName("comboBox_station_2_feed_in_sensor_NO_8266")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_NO_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_in_sensor_NO_8266, 14, 7, 1, 1)
+        self.pushButton_ur_station_2_connect = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_ur_station_2_connect.setObjectName("pushButton_ur_station_2_connect")
+        self.gridLayout_3.addWidget(self.pushButton_ur_station_2_connect, 15, 5, 1, 1)
+        self.comboBox_station_2_feed_in_sensor_type_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_in_sensor_type_8266.setObjectName("comboBox_station_2_feed_in_sensor_type_8266")
+        self.comboBox_station_2_feed_in_sensor_type_8266.addItem("")
+        self.comboBox_station_2_feed_in_sensor_type_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_in_sensor_type_8266, 14, 6, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_6.setObjectName("label_6")
+        self.gridLayout_3.addWidget(self.label_6, 7, 1, 1, 1)
+        self.label_35 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_35.setStyleSheet("background-color: rgb(63, 81, 181);\n"
+"color: rgb(255, 255, 255);\n"
+"padding: 2px 0px;")
+        self.label_35.setText("")
+        self.label_35.setObjectName("label_35")
+        self.gridLayout_3.addWidget(self.label_35, 1, 7, 1, 1)
+        self.lineEdit_ur_station_1_ip = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_ur_station_1_ip.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_ur_station_1_ip.setObjectName("lineEdit_ur_station_1_ip")
+        self.gridLayout_3.addWidget(self.lineEdit_ur_station_1_ip, 9, 5, 1, 1)
+        self.line_44 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_44.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_44.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_44.setObjectName("line_44")
+        self.gridLayout_3.addWidget(self.line_44, 3, 3, 1, 1)
+        self.pushButton_ur_station_3_connect = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_ur_station_3_connect.setObjectName("pushButton_ur_station_3_connect")
+        self.gridLayout_3.addWidget(self.pushButton_ur_station_3_connect, 20, 5, 1, 1)
+        self.label_31 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_31.setStyleSheet("background-color: rgb(63, 81, 181);\n"
+"color: rgb(255, 255, 255);\n"
+"padding: 2px 0px;")
+        self.label_31.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_31.setObjectName("label_31")
+        self.gridLayout_3.addWidget(self.label_31, 1, 6, 1, 1)
+        self.line_3 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_3.setObjectName("line_3")
+        self.gridLayout_3.addWidget(self.line_3, 8, 0, 1, 1)
+        self.line_47 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_47.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_47.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_47.setObjectName("line_47")
+        self.gridLayout_3.addWidget(self.line_47, 3, 6, 1, 1)
+        self.lineEdit_ur_station_3_ip = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_ur_station_3_ip.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_ur_station_3_ip.setObjectName("lineEdit_ur_station_3_ip")
+        self.gridLayout_3.addWidget(self.lineEdit_ur_station_3_ip, 19, 5, 1, 1)
+        self.line_41 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_41.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_41.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_41.setObjectName("line_41")
+        self.gridLayout_3.addWidget(self.line_41, 3, 0, 1, 1)
+        self.label_70 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_70.setObjectName("label_70")
+        self.gridLayout_3.addWidget(self.label_70, 20, 1, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout_3.addWidget(self.label_5, 9, 0, 1, 1)
+        self.line_20 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_20.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_20.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_20.setObjectName("line_20")
+        self.gridLayout_3.addWidget(self.line_20, 18, 4, 1, 1)
+        self.line_15 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_15.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_15.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_15.setObjectName("line_15")
+        self.gridLayout_3.addWidget(self.line_15, 13, 2, 1, 1)
+        self.line_8 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_8.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_8.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_8.setObjectName("line_8")
+        self.gridLayout_3.addWidget(self.line_8, 18, 1, 1, 1)
+        self.line_19 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_19.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_19.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_19.setObjectName("line_19")
+        self.gridLayout_3.addWidget(self.line_19, 18, 3, 1, 1)
+        self.lineEdit_ur_station_2_ip = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_ur_station_2_ip.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_ur_station_2_ip.setObjectName("lineEdit_ur_station_2_ip")
+        self.gridLayout_3.addWidget(self.lineEdit_ur_station_2_ip, 14, 5, 1, 1)
+        self.label_26 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_26.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_26.setObjectName("label_26")
+        self.gridLayout_3.addWidget(self.label_26, 2, 4, 1, 1)
+        self.line_49 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_49.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_49.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_49.setObjectName("line_49")
+        self.gridLayout_3.addWidget(self.line_49, 8, 7, 1, 1)
+        self.comboBox_station_1_feed_in_sensor_type_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_in_sensor_type_8266.setObjectName("comboBox_station_1_feed_in_sensor_type_8266")
+        self.comboBox_station_1_feed_in_sensor_type_8266.addItem("")
+        self.comboBox_station_1_feed_in_sensor_type_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_in_sensor_type_8266, 9, 6, 1, 1)
+        self.lineEdit_mir_reg_NO_0 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_0.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_0.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_0.setObjectName("lineEdit_mir_reg_NO_0")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_0, 4, 2, 1, 1)
+        self.line_4 = QtWidgets.QFrame(self.groupBox_2)
+        self.line_4.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line_4.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line_4.setObjectName("line_4")
+        self.gridLayout_3.addWidget(self.line_4, 8, 1, 1, 1)
+        self.label_72 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_72.setObjectName("label_72")
+        self.gridLayout_3.addWidget(self.label_72, 22, 1, 1, 1)
+        self.comboBox_station_1_feed_out_sensor_type_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_out_sensor_type_8266.setObjectName("comboBox_station_1_feed_out_sensor_type_8266")
+        self.comboBox_station_1_feed_out_sensor_type_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_type_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_out_sensor_type_8266, 11, 6, 1, 1)
+        self.comboBox_station_1_feed_out_sensor_type_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_out_sensor_type_32.setObjectName("comboBox_station_1_feed_out_sensor_type_32")
+        self.comboBox_station_1_feed_out_sensor_type_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_type_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_out_sensor_type_32, 12, 6, 1, 1)
+        self.comboBox_station_2_feed_out_sensor_type_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_out_sensor_type_8266.setObjectName("comboBox_station_2_feed_out_sensor_type_8266")
+        self.comboBox_station_2_feed_out_sensor_type_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_type_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_out_sensor_type_8266, 16, 6, 1, 1)
+        self.comboBox_station_2_feed_out_sensor_type_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_out_sensor_type_32.setObjectName("comboBox_station_2_feed_out_sensor_type_32")
+        self.comboBox_station_2_feed_out_sensor_type_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_type_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_out_sensor_type_32, 17, 6, 1, 1)
+        self.comboBox_station_3_feed_out_sensor_type_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_out_sensor_type_8266.setObjectName("comboBox_station_3_feed_out_sensor_type_8266")
+        self.comboBox_station_3_feed_out_sensor_type_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_type_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_out_sensor_type_8266, 21, 6, 1, 1)
+        self.comboBox_station_3_feed_out_sensor_type_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_out_sensor_type_32.setObjectName("comboBox_station_3_feed_out_sensor_type_32")
+        self.comboBox_station_3_feed_out_sensor_type_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_type_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_out_sensor_type_32, 22, 6, 1, 1)
+        self.comboBox_station_3_feed_out_sensor_NO_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setObjectName("comboBox_station_3_feed_out_sensor_NO_8266")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_out_sensor_NO_8266, 21, 7, 1, 1)
+        self.comboBox_station_3_feed_out_sensor_NO_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_3_feed_out_sensor_NO_32.setObjectName("comboBox_station_3_feed_out_sensor_NO_32")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_3_feed_out_sensor_NO_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_3_feed_out_sensor_NO_32, 22, 7, 1, 1)
+        self.comboBox_station_2_feed_out_sensor_NO_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setObjectName("comboBox_station_2_feed_out_sensor_NO_8266")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_out_sensor_NO_8266, 16, 7, 1, 1)
+        self.comboBox_station_2_feed_out_sensor_NO_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_2_feed_out_sensor_NO_32.setObjectName("comboBox_station_2_feed_out_sensor_NO_32")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_2_feed_out_sensor_NO_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_2_feed_out_sensor_NO_32, 17, 7, 1, 1)
+        self.comboBox_station_1_feed_out_sensor_NO_8266 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setObjectName("comboBox_station_1_feed_out_sensor_NO_8266")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_8266.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_out_sensor_NO_8266, 11, 7, 1, 1)
+        self.comboBox_station_1_feed_out_sensor_NO_32 = QtWidgets.QComboBox(self.groupBox_2)
+        self.comboBox_station_1_feed_out_sensor_NO_32.setObjectName("comboBox_station_1_feed_out_sensor_NO_32")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.comboBox_station_1_feed_out_sensor_NO_32.addItem("")
+        self.gridLayout_3.addWidget(self.comboBox_station_1_feed_out_sensor_NO_32, 12, 7, 1, 1)
+        self.lineEdit_mir_reg_NO_1 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_1.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_1.setText("")
+        self.lineEdit_mir_reg_NO_1.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_1.setObjectName("lineEdit_mir_reg_NO_1")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_1, 5, 2, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_2 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_2.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_2.setText("")
+        self.lineEdit_mir_modbus_addr_NO_2.setObjectName("lineEdit_mir_modbus_addr_NO_2")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_2, 5, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_3 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_3.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_3.setText("")
+        self.lineEdit_mir_modbus_addr_NO_3.setObjectName("lineEdit_mir_modbus_addr_NO_3")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_3, 5, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_4 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_4.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_4.setText("")
+        self.lineEdit_mir_modbus_addr_NO_4.setObjectName("lineEdit_mir_modbus_addr_NO_4")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_4, 6, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_5 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_5.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_5.setText("")
+        self.lineEdit_mir_modbus_addr_NO_5.setObjectName("lineEdit_mir_modbus_addr_NO_5")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_5, 6, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_6 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_6.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_6.setText("")
+        self.lineEdit_mir_modbus_addr_NO_6.setObjectName("lineEdit_mir_modbus_addr_NO_6")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_6, 7, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_7 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_7.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_7.setText("")
+        self.lineEdit_mir_modbus_addr_NO_7.setObjectName("lineEdit_mir_modbus_addr_NO_7")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_7, 7, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_8 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_8.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_8.setText("")
+        self.lineEdit_mir_modbus_addr_NO_8.setObjectName("lineEdit_mir_modbus_addr_NO_8")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_8, 9, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_9 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_9.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_9.setText("")
+        self.lineEdit_mir_modbus_addr_NO_9.setObjectName("lineEdit_mir_modbus_addr_NO_9")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_9, 9, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_10 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_10.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_10.setText("")
+        self.lineEdit_mir_modbus_addr_NO_10.setObjectName("lineEdit_mir_modbus_addr_NO_10")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_10, 10, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_11 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_11.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_11.setText("")
+        self.lineEdit_mir_modbus_addr_NO_11.setObjectName("lineEdit_mir_modbus_addr_NO_11")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_11, 10, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_12 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_12.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_12.setText("")
+        self.lineEdit_mir_modbus_addr_NO_12.setObjectName("lineEdit_mir_modbus_addr_NO_12")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_12, 11, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_13 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_13.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_13.setText("")
+        self.lineEdit_mir_modbus_addr_NO_13.setObjectName("lineEdit_mir_modbus_addr_NO_13")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_13, 11, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_14 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_14.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_14.setText("")
+        self.lineEdit_mir_modbus_addr_NO_14.setObjectName("lineEdit_mir_modbus_addr_NO_14")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_14, 12, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_15 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_15.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_15.setText("")
+        self.lineEdit_mir_modbus_addr_NO_15.setObjectName("lineEdit_mir_modbus_addr_NO_15")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_15, 12, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_16 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_16.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_16.setText("")
+        self.lineEdit_mir_modbus_addr_NO_16.setObjectName("lineEdit_mir_modbus_addr_NO_16")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_16, 14, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_17 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_17.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_17.setText("")
+        self.lineEdit_mir_modbus_addr_NO_17.setObjectName("lineEdit_mir_modbus_addr_NO_17")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_17, 14, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_18 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_18.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_18.setText("")
+        self.lineEdit_mir_modbus_addr_NO_18.setObjectName("lineEdit_mir_modbus_addr_NO_18")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_18, 15, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_19 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_19.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_19.setText("")
+        self.lineEdit_mir_modbus_addr_NO_19.setObjectName("lineEdit_mir_modbus_addr_NO_19")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_19, 15, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_20 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_20.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_20.setText("")
+        self.lineEdit_mir_modbus_addr_NO_20.setObjectName("lineEdit_mir_modbus_addr_NO_20")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_20, 16, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_21 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_21.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_21.setText("")
+        self.lineEdit_mir_modbus_addr_NO_21.setObjectName("lineEdit_mir_modbus_addr_NO_21")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_21, 16, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_22 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_22.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_22.setText("")
+        self.lineEdit_mir_modbus_addr_NO_22.setObjectName("lineEdit_mir_modbus_addr_NO_22")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_22, 17, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_23 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_23.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_23.setText("")
+        self.lineEdit_mir_modbus_addr_NO_23.setObjectName("lineEdit_mir_modbus_addr_NO_23")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_23, 17, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_24 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_24.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_24.setText("")
+        self.lineEdit_mir_modbus_addr_NO_24.setObjectName("lineEdit_mir_modbus_addr_NO_24")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_24, 19, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_25 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_25.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_25.setText("")
+        self.lineEdit_mir_modbus_addr_NO_25.setObjectName("lineEdit_mir_modbus_addr_NO_25")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_25, 19, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_26 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_26.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_26.setText("")
+        self.lineEdit_mir_modbus_addr_NO_26.setObjectName("lineEdit_mir_modbus_addr_NO_26")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_26, 20, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_27 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_27.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_27.setText("")
+        self.lineEdit_mir_modbus_addr_NO_27.setObjectName("lineEdit_mir_modbus_addr_NO_27")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_27, 20, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_28 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_28.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_28.setText("")
+        self.lineEdit_mir_modbus_addr_NO_28.setObjectName("lineEdit_mir_modbus_addr_NO_28")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_28, 21, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_29 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_29.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_29.setText("")
+        self.lineEdit_mir_modbus_addr_NO_29.setObjectName("lineEdit_mir_modbus_addr_NO_29")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_29, 21, 4, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_30 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_30.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_30.setText("")
+        self.lineEdit_mir_modbus_addr_NO_30.setObjectName("lineEdit_mir_modbus_addr_NO_30")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_30, 22, 3, 1, 1)
+        self.lineEdit_mir_modbus_addr_NO_31 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_modbus_addr_NO_31.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_modbus_addr_NO_31.setText("")
+        self.lineEdit_mir_modbus_addr_NO_31.setObjectName("lineEdit_mir_modbus_addr_NO_31")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_modbus_addr_NO_31, 22, 4, 1, 1)
+        self.lineEdit_mir_reg_NO_2 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_2.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_2.setText("")
+        self.lineEdit_mir_reg_NO_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_2.setObjectName("lineEdit_mir_reg_NO_2")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_2, 6, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_3 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_3.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_3.setText("")
+        self.lineEdit_mir_reg_NO_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_3.setObjectName("lineEdit_mir_reg_NO_3")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_3, 7, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_4 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_4.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_4.setText("")
+        self.lineEdit_mir_reg_NO_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_4.setObjectName("lineEdit_mir_reg_NO_4")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_4, 9, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_5 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_5.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_5.setText("")
+        self.lineEdit_mir_reg_NO_5.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_5.setObjectName("lineEdit_mir_reg_NO_5")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_5, 10, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_6 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_6.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_6.setText("")
+        self.lineEdit_mir_reg_NO_6.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_6.setObjectName("lineEdit_mir_reg_NO_6")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_6, 11, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_7 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_7.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_7.setText("")
+        self.lineEdit_mir_reg_NO_7.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_7.setObjectName("lineEdit_mir_reg_NO_7")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_7, 12, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_8 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_8.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_8.setText("")
+        self.lineEdit_mir_reg_NO_8.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_8.setObjectName("lineEdit_mir_reg_NO_8")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_8, 14, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_9 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_9.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_9.setText("")
+        self.lineEdit_mir_reg_NO_9.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_9.setObjectName("lineEdit_mir_reg_NO_9")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_9, 15, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_10 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_10.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_10.setText("")
+        self.lineEdit_mir_reg_NO_10.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_10.setObjectName("lineEdit_mir_reg_NO_10")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_10, 16, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_11 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_11.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_11.setText("")
+        self.lineEdit_mir_reg_NO_11.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_11.setObjectName("lineEdit_mir_reg_NO_11")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_11, 17, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_12 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_12.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_12.setText("")
+        self.lineEdit_mir_reg_NO_12.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_12.setObjectName("lineEdit_mir_reg_NO_12")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_12, 19, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_13 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_13.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_13.setText("")
+        self.lineEdit_mir_reg_NO_13.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_13.setObjectName("lineEdit_mir_reg_NO_13")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_13, 20, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_14 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_14.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_14.setText("")
+        self.lineEdit_mir_reg_NO_14.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_14.setObjectName("lineEdit_mir_reg_NO_14")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_14, 21, 2, 1, 1)
+        self.lineEdit_mir_reg_NO_15 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit_mir_reg_NO_15.setStyleSheet(" background-color: #f2f2f2;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_mir_reg_NO_15.setText("")
+        self.lineEdit_mir_reg_NO_15.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_mir_reg_NO_15.setObjectName("lineEdit_mir_reg_NO_15")
+        self.gridLayout_3.addWidget(self.lineEdit_mir_reg_NO_15, 22, 2, 1, 1)
         self.verticalLayout_12.addLayout(self.gridLayout_3)
         self.verticalLayout_11.addWidget(self.groupBox_2)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_11.addItem(spacerItem1)
-        self.tabWidget.addTab(self.tab_3, "")
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_11.addItem(spacerItem2)
+        self.tabWidget.addTab(self.tab_setting, "")
         self.verticalLayout_2.addWidget(self.tabWidget)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -318,6 +1321,9 @@ class Ui_MainWindow(object):
         self.actionHelp_charintorn_autoflexible_com.setObjectName("actionHelp_charintorn_autoflexible_com")
         self.actionFile_save = QtWidgets.QAction(MainWindow)
         self.actionFile_save.setObjectName("actionFile_save")
+        self.actionFile_load = QtWidgets.QAction(MainWindow)
+        self.actionFile_load.setObjectName("actionFile_load")
+        self.menuFile.addAction(self.actionFile_load)
         self.menuFile.addAction(self.actionFile_save)
         self.menuFile.addAction(self.actionFile_exit)
         self.menuHelp.addAction(self.actionHelp_charintorn_autoflexible_com)
@@ -325,7 +1331,7 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuHelp.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -336,44 +1342,195 @@ class Ui_MainWindow(object):
         self.groupBox_station_2.setTitle(_translate("MainWindow", "Station 2 : PCB Assembly"))
         self.groupBox_station_3.setTitle(_translate("MainWindow", "Station 3 : Automated Optical Inspection"))
         self.groupBox_mir.setTitle(_translate("MainWindow", "MiR"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Dashboard"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "UR"))
-        self.groupBox.setTitle(_translate("MainWindow", "Settings"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_dashboard), _translate("MainWindow", "Dashboard"))
+        self.groupBox.setTitle(_translate("MainWindow", "MiR Connection"))
         self.label_2.setText(_translate("MainWindow", "Username"))
         self.lineEdit_setting_mir_password.setText(_translate("MainWindow", "distributor"))
         self.lineEdit_setting_mir_password.setPlaceholderText(_translate("MainWindow", "********"))
         self.lineEdit_setting_mir_username.setText(_translate("MainWindow", "distributor"))
         self.lineEdit_setting_mir_username.setPlaceholderText(_translate("MainWindow", "distributor"))
         self.label_3.setText(_translate("MainWindow", "Password"))
-        self.lineEdit_setting_mir_ip.setText(_translate("MainWindow", "192.168.2.220"))
+        self.lineEdit_setting_mir_ip.setText(_translate("MainWindow", "192.168.12.20"))
         self.lineEdit_setting_mir_ip.setPlaceholderText(_translate("MainWindow", "192.168.2.222"))
         self.label.setText(_translate("MainWindow", "IP Address"))
+        self.label_20.setText(_translate("MainWindow", "Authorization"))
+        self.lineEdit_setting_mir_auth_key.setText(_translate("MainWindow", "Basic ZGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="))
         self.label_18.setText(_translate("MainWindow", "Response Time (Latency)"))
-        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "100"))
         self.label_19.setText(_translate("MainWindow", "ms"))
         self.label_16.setText(_translate("MainWindow", "Frequency"))
-        self.lineEdit.setText(_translate("MainWindow", "1"))
+        self.lineEdit_setting_mir_freq.setText(_translate("MainWindow", "1"))
         self.label_17.setText(_translate("MainWindow", "Hz"))
-        self.pushButton_connect_mir.setText(_translate("MainWindow", "Connect"))
-        self.groupBox_2.setTitle(_translate("MainWindow", "Station missions"))
-        self.label_5.setText(_translate("MainWindow", "Station 1 : Screwing"))
-        self.label_7.setText(_translate("MainWindow", "Station 0 : Raw material"))
-        self.label_15.setText(_translate("MainWindow", "Place"))
-        self.label_12.setText(_translate("MainWindow", "Place"))
-        self.label_9.setText(_translate("MainWindow", "Pick"))
-        self.label_14.setText(_translate("MainWindow", "Station 2 : Assembly"))
-        self.label_4.setText(_translate("MainWindow", "Pick"))
-        self.label_11.setText(_translate("MainWindow", "Pick"))
-        self.label_6.setText(_translate("MainWindow", "Place"))
-        self.label_10.setText(_translate("MainWindow", "Place"))
-        self.label_8.setText(_translate("MainWindow", "Station 3 : Inspection"))
-        self.label_13.setText(_translate("MainWindow", "Pick"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "MiR"))
+        self.pushButton_setting_mir_connect.setText(_translate("MainWindow", "Connect"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "UR input mapping via MODBUS"))
+        self.label_21.setText(_translate("MainWindow", "Frequency"))
+        self.lineEdit_setting_ur_freq.setText(_translate("MainWindow", "1"))
+        self.label_22.setText(_translate("MainWindow", "Hz"))
+        self.pushButton_setting_ur_connect_all.setText(_translate("MainWindow", "Connect All"))
+        self.pushButton_setting_ur_disconnect_all.setText(_translate("MainWindow", "Disconnect All"))
+        self.comboBox_station_3_feed_in_sensor_type_8266.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_3_feed_in_sensor_type_8266.setItemText(1, _translate("MainWindow", "CI"))
+        self.label_66.setText(_translate("MainWindow", "Feed-in ESP32"))
+        self.label_14.setText(_translate("MainWindow", "2 : Assembly"))
+        self.label_4.setText(_translate("MainWindow", "Feed-in ESP8266"))
+        self.label_30.setText(_translate("MainWindow", "Station"))
+        self.label_61.setText(_translate("MainWindow", "Input NO."))
+        self.label_69.setText(_translate("MainWindow", "Feed-in ESP8266"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_1_feed_in_sensor_NO_8266.setItemText(7, _translate("MainWindow", "7"))
+        self.label_63.setText(_translate("MainWindow", "Feed-out ESP8266"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_1_feed_in_sensor_NO_32.setItemText(7, _translate("MainWindow", "7"))
+        self.label_64.setText(_translate("MainWindow", "Feed-in ESP32"))
+        self.pushButton_ur_station_1_connect.setText(_translate("MainWindow", "Connect"))
+        self.label_15.setText(_translate("MainWindow", "Feed-in ESP8266"))
+        self.comboBox_station_3_feed_in_sensor_type_32.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_3_feed_in_sensor_type_32.setItemText(1, _translate("MainWindow", "CI"))
+        self.label_13.setText(_translate("MainWindow", "Feed-out ESP32"))
+        self.label_68.setText(_translate("MainWindow", "Feed-out ESP32"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_2_feed_in_sensor_NO_32.setItemText(7, _translate("MainWindow", "7"))
+        self.label_23.setText(_translate("MainWindow", "Station Sensors"))
+        self.label_12.setText(_translate("MainWindow", "Feed-in ESP8266"))
+        self.label_67.setText(_translate("MainWindow", "Feed-out ESP8266"))
+        self.label_62.setText(_translate("MainWindow", "Input Type"))
+        self.label_28.setText(_translate("MainWindow", "Register NO."))
+        self.label_32.setText(_translate("MainWindow", "IP Address"))
+        self.label_65.setText(_translate("MainWindow", "Feed-out ESP8266"))
+        self.label_24.setText(_translate("MainWindow", "MiR Registers (32-bit)"))
+        self.label_7.setText(_translate("MainWindow", "0 : Raw material"))
+        self.comboBox_station_1_feed_in_sensor_type_32.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_1_feed_in_sensor_type_32.setItemText(1, _translate("MainWindow", "CI"))
+        self.label_71.setText(_translate("MainWindow", "Feed-out ESP8266"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_3_feed_in_sensor_NO_32.setItemText(7, _translate("MainWindow", "7"))
+        self.comboBox_station_2_feed_in_sensor_type_32.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_2_feed_in_sensor_type_32.setItemText(1, _translate("MainWindow", "CI"))
+        self.label_25.setText(_translate("MainWindow", "Most Significant Bit (MSB, 16-bit)"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_3_feed_in_sensor_NO_8266.setItemText(7, _translate("MainWindow", "7"))
+        self.label_33.setText(_translate("MainWindow", "Feed-in ESP32"))
+        self.label_8.setText(_translate("MainWindow", "3 : Inspection"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_2_feed_in_sensor_NO_8266.setItemText(7, _translate("MainWindow", "7"))
+        self.pushButton_ur_station_2_connect.setText(_translate("MainWindow", "Connect"))
+        self.comboBox_station_2_feed_in_sensor_type_8266.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_2_feed_in_sensor_type_8266.setItemText(1, _translate("MainWindow", "CI"))
+        self.label_6.setText(_translate("MainWindow", "Feed-out ESP32"))
+        self.lineEdit_ur_station_1_ip.setText(_translate("MainWindow", "127.0.0.1"))
+        self.pushButton_ur_station_3_connect.setText(_translate("MainWindow", "Connect"))
+        self.label_31.setText(_translate("MainWindow", "UR"))
+        self.lineEdit_ur_station_3_ip.setText(_translate("MainWindow", "127.0.0.1"))
+        self.label_70.setText(_translate("MainWindow", "Feed-in ESP32"))
+        self.label_5.setText(_translate("MainWindow", "1 : Screwing"))
+        self.lineEdit_ur_station_2_ip.setText(_translate("MainWindow", "127.0.0.1"))
+        self.label_26.setText(_translate("MainWindow", "Least Significant Bit (LSB, 16-bit)"))
+        self.comboBox_station_1_feed_in_sensor_type_8266.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_1_feed_in_sensor_type_8266.setItemText(1, _translate("MainWindow", "CI"))
+        self.lineEdit_mir_reg_NO_0.setText(_translate("MainWindow", "1"))
+        self.label_72.setText(_translate("MainWindow", "Feed-out ESP32"))
+        self.comboBox_station_1_feed_out_sensor_type_8266.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_1_feed_out_sensor_type_8266.setItemText(1, _translate("MainWindow", "CI"))
+        self.comboBox_station_1_feed_out_sensor_type_32.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_1_feed_out_sensor_type_32.setItemText(1, _translate("MainWindow", "CI"))
+        self.comboBox_station_2_feed_out_sensor_type_8266.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_2_feed_out_sensor_type_8266.setItemText(1, _translate("MainWindow", "CI"))
+        self.comboBox_station_2_feed_out_sensor_type_32.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_2_feed_out_sensor_type_32.setItemText(1, _translate("MainWindow", "CI"))
+        self.comboBox_station_3_feed_out_sensor_type_8266.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_3_feed_out_sensor_type_8266.setItemText(1, _translate("MainWindow", "CI"))
+        self.comboBox_station_3_feed_out_sensor_type_32.setItemText(0, _translate("MainWindow", "DI"))
+        self.comboBox_station_3_feed_out_sensor_type_32.setItemText(1, _translate("MainWindow", "CI"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_3_feed_out_sensor_NO_8266.setItemText(7, _translate("MainWindow", "7"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_3_feed_out_sensor_NO_32.setItemText(7, _translate("MainWindow", "7"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_2_feed_out_sensor_NO_8266.setItemText(7, _translate("MainWindow", "7"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_2_feed_out_sensor_NO_32.setItemText(7, _translate("MainWindow", "7"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_1_feed_out_sensor_NO_8266.setItemText(7, _translate("MainWindow", "7"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(0, _translate("MainWindow", "0"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(1, _translate("MainWindow", "1"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(3, _translate("MainWindow", "3"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(4, _translate("MainWindow", "4"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(5, _translate("MainWindow", "5"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(6, _translate("MainWindow", "6"))
+        self.comboBox_station_1_feed_out_sensor_NO_32.setItemText(7, _translate("MainWindow", "7"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_setting), _translate("MainWindow", "Settings"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionFile_exit.setText(_translate("MainWindow", "Exit"))
         self.actionHelp_charintorn_autoflexible_com.setText(_translate("MainWindow", "charintorn@autoflexible.com"))
         self.actionFile_save.setText(_translate("MainWindow", "Save"))
+        self.actionFile_load.setText(_translate("MainWindow", "Load"))
 
 
 if __name__ == "__main__":

@@ -17,118 +17,112 @@ class Ui_MirDashboardWidget(object):
         MirDashboardWidget.resize(562, 562)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(MirDashboardWidget)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.label_8 = QtWidgets.QLabel(MirDashboardWidget)
-        self.label_8.setStyleSheet(
-            "background-color: rgb(85, 170, 255);\n"
-            "color: rgb(255, 255, 255);\n"
-            "padding: 2px;"
-        )
-        self.label_8.setObjectName("label_8")
-        self.verticalLayout.addWidget(self.label_8)
+        self.verticalLayout_main = QtWidgets.QVBoxLayout()
+        self.verticalLayout_main.setObjectName("verticalLayout_main")
+        self.label_robotInformation = QtWidgets.QLabel(MirDashboardWidget)
+        self.label_robotInformation.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"padding: 2px;")
+        self.label_robotInformation.setObjectName("label_robotInformation")
+        self.verticalLayout_main.addWidget(self.label_robotInformation)
         self.formLayout = QtWidgets.QFormLayout()
         self.formLayout.setObjectName("formLayout")
+        self.label_name = QtWidgets.QLabel(MirDashboardWidget)
+        self.label_name.setObjectName("label_name")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_name)
+        self.label_ip = QtWidgets.QLabel(MirDashboardWidget)
+        self.label_ip.setObjectName("label_ip")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_ip)
+        self.label_battery = QtWidgets.QLabel(MirDashboardWidget)
+        self.label_battery.setObjectName("label_battery")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_battery)
+        self.label_state = QtWidgets.QLabel(MirDashboardWidget)
+        self.label_state.setObjectName("label_state")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_state)
+        self.lineEdit_ip = QtWidgets.QLineEdit(MirDashboardWidget)
+        self.lineEdit_ip.setEnabled(False)
+        self.lineEdit_ip.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_ip.setReadOnly(False)
+        self.lineEdit_ip.setObjectName("lineEdit_ip")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_ip)
+        self.lineEdit_battery = QtWidgets.QLineEdit(MirDashboardWidget)
+        self.lineEdit_battery.setEnabled(False)
+        self.lineEdit_battery.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_battery.setReadOnly(False)
+        self.lineEdit_battery.setObjectName("lineEdit_battery")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_battery)
+        self.lineEdit_state = QtWidgets.QLineEdit(MirDashboardWidget)
+        self.lineEdit_state.setEnabled(False)
+        self.lineEdit_state.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_state.setReadOnly(False)
+        self.lineEdit_state.setObjectName("lineEdit_state")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_state)
+        self.lineEdit_name = QtWidgets.QLineEdit(MirDashboardWidget)
+        self.lineEdit_name.setEnabled(False)
+        self.lineEdit_name.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_name.setReadOnly(False)
+        self.lineEdit_name.setObjectName("lineEdit_name")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_name)
         self.label = QtWidgets.QLabel(MirDashboardWidget)
         self.label.setObjectName("label")
-        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
-        self.label_2 = QtWidgets.QLabel(MirDashboardWidget)
-        self.label_2.setObjectName("label_2")
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_2)
-        self.label_5 = QtWidgets.QLabel(MirDashboardWidget)
-        self.label_5.setObjectName("label_5")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_5)
-        self.label_10 = QtWidgets.QLabel(MirDashboardWidget)
-        self.label_10.setObjectName("label_10")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_10)
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label)
         self.lineEdit = QtWidgets.QLineEdit(MirDashboardWidget)
         self.lineEdit.setEnabled(False)
-        self.lineEdit.setStyleSheet(
-            " background-color: #f2f2f2;\n"
-            "color: #333; \n"
-            "padding: 2px;\n"
-            "border: 1px solid #ccc;\n"
-            "border-radius: 2px;\n"
-            "selection-color: black;\n"
-            "selection-background-color: #ccc;"
-        )
-        self.lineEdit.setReadOnly(False)
+        self.lineEdit.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
         self.lineEdit.setObjectName("lineEdit")
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
-        self.lineEdit_2 = QtWidgets.QLineEdit(MirDashboardWidget)
-        self.lineEdit_2.setEnabled(False)
-        self.lineEdit_2.setStyleSheet(
-            " background-color: #f2f2f2;\n"
-            "color: #333; \n"
-            "padding: 2px;\n"
-            "border: 1px solid #ccc;\n"
-            "border-radius: 2px;\n"
-            "selection-color: black;\n"
-            "selection-background-color: #ccc;"
-        )
-        self.lineEdit_2.setReadOnly(False)
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_2)
-        self.lineEdit_3 = QtWidgets.QLineEdit(MirDashboardWidget)
-        self.lineEdit_3.setEnabled(False)
-        self.lineEdit_3.setStyleSheet(
-            " background-color: #f2f2f2;\n"
-            "color: #333; \n"
-            "padding: 2px;\n"
-            "border: 1px solid #ccc;\n"
-            "border-radius: 2px;\n"
-            "selection-color: black;\n"
-            "selection-background-color: #ccc;"
-        )
-        self.lineEdit_3.setReadOnly(False)
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_3)
-        self.lineEdit_4 = QtWidgets.QLineEdit(MirDashboardWidget)
-        self.lineEdit_4.setEnabled(False)
-        self.lineEdit_4.setStyleSheet(
-            " background-color: #f2f2f2;\n"
-            "color: #333; \n"
-            "padding: 2px;\n"
-            "border: 1px solid #ccc;\n"
-            "border-radius: 2px;\n"
-            "selection-color: black;\n"
-            "selection-background-color: #ccc;"
-        )
-        self.lineEdit_4.setReadOnly(False)
-        self.lineEdit_4.setObjectName("lineEdit_4")
-        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit_4)
-        self.verticalLayout.addLayout(self.formLayout)
-        self.label_7 = QtWidgets.QLabel(MirDashboardWidget)
-        self.label_7.setStyleSheet(
-            "background-color: rgb(85, 170, 255);\n"
-            "color: rgb(255, 255, 255);\n"
-            "padding: 2px;"
-        )
-        self.label_7.setObjectName("label_7")
-        self.verticalLayout.addWidget(self.label_7)
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
+        self.verticalLayout_main.addLayout(self.formLayout)
+        self.label_missionQueue = QtWidgets.QLabel(MirDashboardWidget)
+        self.label_missionQueue.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"padding: 2px;")
+        self.label_missionQueue.setObjectName("label_missionQueue")
+        self.verticalLayout_main.addWidget(self.label_missionQueue)
         self.scrollArea_mission_queue = QtWidgets.QScrollArea(MirDashboardWidget)
-        self.scrollArea_mission_queue.setSizeAdjustPolicy(
-            QtWidgets.QAbstractScrollArea.AdjustIgnored
-        )
+        self.scrollArea_mission_queue.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustIgnored)
         self.scrollArea_mission_queue.setWidgetResizable(True)
         self.scrollArea_mission_queue.setObjectName("scrollArea_mission_queue")
         self.scrollArea_mission_queue_widget = QtWidgets.QWidget()
-        self.scrollArea_mission_queue_widget.setGeometry(QtCore.QRect(0, 0, 540, 380))
-        self.scrollArea_mission_queue_widget.setObjectName(
-            "scrollArea_mission_queue_widget"
-        )
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(
-            self.scrollArea_mission_queue_widget
-        )
+        self.scrollArea_mission_queue_widget.setGeometry(QtCore.QRect(0, 0, 540, 352))
+        self.scrollArea_mission_queue_widget.setObjectName("scrollArea_mission_queue_widget")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scrollArea_mission_queue_widget)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.scrollArea_mission_queue_layout = QtWidgets.QVBoxLayout()
-        self.scrollArea_mission_queue_layout.setObjectName(
-            "scrollArea_mission_queue_layout"
-        )
+        self.scrollArea_mission_queue_layout.setObjectName("scrollArea_mission_queue_layout")
         self.verticalLayout_3.addLayout(self.scrollArea_mission_queue_layout)
         self.scrollArea_mission_queue.setWidget(self.scrollArea_mission_queue_widget)
-        self.verticalLayout.addWidget(self.scrollArea_mission_queue)
-        self.verticalLayout_2.addLayout(self.verticalLayout)
+        self.verticalLayout_main.addWidget(self.scrollArea_mission_queue)
+        self.verticalLayout_2.addLayout(self.verticalLayout_main)
 
         self.retranslateUi(MirDashboardWidget)
         QtCore.QMetaObject.connectSlotsByName(MirDashboardWidget)
@@ -136,17 +130,17 @@ class Ui_MirDashboardWidget(object):
     def retranslateUi(self, MirDashboardWidget):
         _translate = QtCore.QCoreApplication.translate
         MirDashboardWidget.setWindowTitle(_translate("MirDashboardWidget", "Form"))
-        self.label_8.setText(_translate("MirDashboardWidget", "Robot information"))
-        self.label.setText(_translate("MirDashboardWidget", "Name:"))
-        self.label_2.setText(_translate("MirDashboardWidget", "IP Address:"))
-        self.label_5.setText(_translate("MirDashboardWidget", "Battery:"))
-        self.label_10.setText(_translate("MirDashboardWidget", "State:"))
-        self.label_7.setText(_translate("MirDashboardWidget", "Mission queue"))
+        self.label_robotInformation.setText(_translate("MirDashboardWidget", "Robot information"))
+        self.label_name.setText(_translate("MirDashboardWidget", "Name:"))
+        self.label_ip.setText(_translate("MirDashboardWidget", "IP Address:"))
+        self.label_battery.setText(_translate("MirDashboardWidget", "Battery:"))
+        self.label_state.setText(_translate("MirDashboardWidget", "State:"))
+        self.label.setText(_translate("MirDashboardWidget", "Response Time (ms) :"))
+        self.label_missionQueue.setText(_translate("MirDashboardWidget", "Mission queue"))
 
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     MirDashboardWidget = QtWidgets.QWidget()
     ui = Ui_MirDashboardWidget()

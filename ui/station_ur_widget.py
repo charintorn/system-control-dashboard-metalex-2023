@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_StationUrWidget(object):
     def setupUi(self, StationUrWidget):
         StationUrWidget.setObjectName("StationUrWidget")
-        StationUrWidget.resize(420, 186)
+        StationUrWidget.resize(420, 194)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(StationUrWidget)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.verticalLayout = QtWidgets.QVBoxLayout()
@@ -36,7 +36,7 @@ class Ui_StationUrWidget(object):
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_3)
         self.lineEdit_ur_state = QtWidgets.QLineEdit(StationUrWidget)
         self.lineEdit_ur_state.setEnabled(False)
-        self.lineEdit_ur_state.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_ur_state.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -50,7 +50,7 @@ class Ui_StationUrWidget(object):
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_4)
         self.lineEdit_2 = QtWidgets.QLineEdit(StationUrWidget)
         self.lineEdit_2.setEnabled(False)
-        self.lineEdit_2.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_2.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -64,7 +64,7 @@ class Ui_StationUrWidget(object):
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_5)
         self.lineEdit_3 = QtWidgets.QLineEdit(StationUrWidget)
         self.lineEdit_3.setEnabled(False)
-        self.lineEdit_3.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_3.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -78,7 +78,7 @@ class Ui_StationUrWidget(object):
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_6)
         self.lineEdit_4 = QtWidgets.QLineEdit(StationUrWidget)
         self.lineEdit_4.setEnabled(False)
-        self.lineEdit_4.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_4.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -112,7 +112,7 @@ class Ui_StationUrWidget(object):
         self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_10)
         self.lineEdit_5 = QtWidgets.QLineEdit(StationUrWidget)
         self.lineEdit_5.setEnabled(False)
-        self.lineEdit_5.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_5.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -121,20 +121,9 @@ class Ui_StationUrWidget(object):
 "selection-background-color: #ccc;")
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.lineEdit_5)
-        self.lineEdit_6 = QtWidgets.QLineEdit(StationUrWidget)
-        self.lineEdit_6.setEnabled(False)
-        self.lineEdit_6.setStyleSheet(" background-color: #f2f2f2;\n"
-"color: #333; \n"
-"padding: 2px;\n"
-"border: 1px solid #ccc;\n"
-"border-radius: 2px;\n"
-"selection-color: black;\n"
-"selection-background-color: #ccc;")
-        self.lineEdit_6.setObjectName("lineEdit_6")
-        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_6)
         self.lineEdit_7 = QtWidgets.QLineEdit(StationUrWidget)
         self.lineEdit_7.setEnabled(False)
-        self.lineEdit_7.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.lineEdit_7.setStyleSheet(" background-color: #ffffff;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
@@ -143,6 +132,17 @@ class Ui_StationUrWidget(object):
 "selection-background-color: #ccc;")
         self.lineEdit_7.setObjectName("lineEdit_7")
         self.formLayout_2.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.lineEdit_7)
+        self.lineEdit_6 = QtWidgets.QLineEdit(StationUrWidget)
+        self.lineEdit_6.setEnabled(False)
+        self.lineEdit_6.setStyleSheet(" background-color: #ffffff;\n"
+"color: #333; \n"
+"padding: 2px;\n"
+"border: 1px solid #ccc;\n"
+"border-radius: 2px;\n"
+"selection-color: black;\n"
+"selection-background-color: #ccc;")
+        self.lineEdit_6.setObjectName("lineEdit_6")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit_6)
         self.verticalLayout_5.addLayout(self.formLayout_2)
         spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout_5.addItem(spacerItem1)
