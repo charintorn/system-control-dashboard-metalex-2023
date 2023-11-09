@@ -15,6 +15,7 @@ from pymodbus.client import ModbusTcpClient
 class UrInterface(QObject):
     connectionChangedSignal = pyqtSignal(bool)
     inputsFetchedSignal = pyqtSignal(list)
+    modbusLoopFrequencySignal = pyqtSignal(float)
 
     def __init__(
         self,
@@ -172,6 +173,8 @@ class UrInterface(QObject):
             #
             time_ = 1 / self.freq
             #
+            prev_time_ = None
+            #
             while self.read_thread_enable:
                 try:
                     #
@@ -179,8 +182,8 @@ class UrInterface(QObject):
                     #
                     di_register_ = self.read_single_register(reg_NO_=0)[0]
                     ci_register_ = self.read_single_register(reg_NO_=30)[0]
-                    self.logger.debug(f"di_register_ = {di_register_}")
-                    self.logger.debug(f"ci_register_ = {ci_register_}")
+                    # self.logger.debug(f"di_register_ = {di_register_}")
+                    # self.logger.debug(f"ci_register_ = {ci_register_}")
                     #
                     input_bits_ = [None, None, None, None]
 
@@ -191,19 +194,24 @@ class UrInterface(QObject):
                         type_ = self.input_types[i]
                         NO_ = self.input_NOs[i]
                         #
-                        console.log(f"-> {i}: {type_}:{NO_}")
+                        # console.log(f"-> {i}: {type_}:{NO_}")
 
                         if type_ == "DI":
                             input_bits_[i] = ((di_register_ >> NO_) & 1) == 1
                         else:  # "CI"
                             input_bits_[i] = ((ci_register_ >> NO_) & 1) == 1
-
                     #
                     # console.print(f"input_bits_ => {input_bits_}")
                     self.inputsFetchedSignal.emit(input_bits_)
                     #
                     end_time_ = time.time()
+                    if prev_time_ != None:
+                        actual_freq_ = 1 / (end_time_ - prev_time_)
+                        self.modbusLoopFrequencySignal.emit(actual_freq_)
+                    prev_time_ = end_time_
+                    #
                     period_ = end_time_ - start_time_
+                    #
                     #
                     if period_ < time_:
                         time.sleep(time_ - period_)

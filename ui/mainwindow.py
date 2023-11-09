@@ -1253,19 +1253,19 @@ class Ui_MainWindow(object):
         self.label_10 = QtWidgets.QLabel(self.groupBox_2)
         self.label_10.setObjectName("label_10")
         self.horizontalLayout_4.addWidget(self.label_10)
-        self.label_setting_mir_latency_2 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_setting_mir_latency_2.setMinimumSize(QtCore.QSize(75, 0))
-        self.label_setting_mir_latency_2.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.label_setting_mir_latency_2.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.label_setting_ur_modbus_loop_freq_1 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_setting_ur_modbus_loop_freq_1.setMinimumSize(QtCore.QSize(75, 0))
+        self.label_setting_ur_modbus_loop_freq_1.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.label_setting_ur_modbus_loop_freq_1.setStyleSheet(" background-color: #f2f2f2;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
 "border-radius: 2px;\n"
 "selection-color: black;\n"
 "selection-background-color: #ccc;")
-        self.label_setting_mir_latency_2.setText("")
-        self.label_setting_mir_latency_2.setObjectName("label_setting_mir_latency_2")
-        self.horizontalLayout_4.addWidget(self.label_setting_mir_latency_2)
+        self.label_setting_ur_modbus_loop_freq_1.setText("")
+        self.label_setting_ur_modbus_loop_freq_1.setObjectName("label_setting_ur_modbus_loop_freq_1")
+        self.horizontalLayout_4.addWidget(self.label_setting_ur_modbus_loop_freq_1)
         self.label_9 = QtWidgets.QLabel(self.groupBox_2)
         self.label_9.setObjectName("label_9")
         self.horizontalLayout_4.addWidget(self.label_9)
@@ -1275,19 +1275,19 @@ class Ui_MainWindow(object):
         self.label_11 = QtWidgets.QLabel(self.groupBox_2)
         self.label_11.setObjectName("label_11")
         self.horizontalLayout_5.addWidget(self.label_11)
-        self.label_setting_mir_latency_3 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_setting_mir_latency_3.setMinimumSize(QtCore.QSize(75, 0))
-        self.label_setting_mir_latency_3.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.label_setting_mir_latency_3.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.label_setting_ur_modbus_loop_freq_2 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_setting_ur_modbus_loop_freq_2.setMinimumSize(QtCore.QSize(75, 0))
+        self.label_setting_ur_modbus_loop_freq_2.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.label_setting_ur_modbus_loop_freq_2.setStyleSheet(" background-color: #f2f2f2;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
 "border-radius: 2px;\n"
 "selection-color: black;\n"
 "selection-background-color: #ccc;")
-        self.label_setting_mir_latency_3.setText("")
-        self.label_setting_mir_latency_3.setObjectName("label_setting_mir_latency_3")
-        self.horizontalLayout_5.addWidget(self.label_setting_mir_latency_3)
+        self.label_setting_ur_modbus_loop_freq_2.setText("")
+        self.label_setting_ur_modbus_loop_freq_2.setObjectName("label_setting_ur_modbus_loop_freq_2")
+        self.horizontalLayout_5.addWidget(self.label_setting_ur_modbus_loop_freq_2)
         self.label_73 = QtWidgets.QLabel(self.groupBox_2)
         self.label_73.setObjectName("label_73")
         self.horizontalLayout_5.addWidget(self.label_73)
@@ -1297,19 +1297,19 @@ class Ui_MainWindow(object):
         self.label_74 = QtWidgets.QLabel(self.groupBox_2)
         self.label_74.setObjectName("label_74")
         self.horizontalLayout_6.addWidget(self.label_74)
-        self.label_setting_mir_latency_4 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_setting_mir_latency_4.setMinimumSize(QtCore.QSize(75, 0))
-        self.label_setting_mir_latency_4.setMaximumSize(QtCore.QSize(50, 16777215))
-        self.label_setting_mir_latency_4.setStyleSheet(" background-color: #f2f2f2;\n"
+        self.label_setting_ur_modbus_loop_freq_3 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_setting_ur_modbus_loop_freq_3.setMinimumSize(QtCore.QSize(75, 0))
+        self.label_setting_ur_modbus_loop_freq_3.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.label_setting_ur_modbus_loop_freq_3.setStyleSheet(" background-color: #f2f2f2;\n"
 "color: #333; \n"
 "padding: 2px;\n"
 "border: 1px solid #ccc;\n"
 "border-radius: 2px;\n"
 "selection-color: black;\n"
 "selection-background-color: #ccc;")
-        self.label_setting_mir_latency_4.setText("")
-        self.label_setting_mir_latency_4.setObjectName("label_setting_mir_latency_4")
-        self.horizontalLayout_6.addWidget(self.label_setting_mir_latency_4)
+        self.label_setting_ur_modbus_loop_freq_3.setText("")
+        self.label_setting_ur_modbus_loop_freq_3.setObjectName("label_setting_ur_modbus_loop_freq_3")
+        self.horizontalLayout_6.addWidget(self.label_setting_ur_modbus_loop_freq_3)
         self.label_75 = QtWidgets.QLabel(self.groupBox_2)
         self.label_75.setObjectName("label_75")
         self.horizontalLayout_6.addWidget(self.label_75)

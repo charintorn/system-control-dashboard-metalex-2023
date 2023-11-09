@@ -31,6 +31,8 @@ class UrUiInterface(QObject):
         comboBox_feed_out_NO_8266_=None,
         comboBox_feed_out_NO_32_=None,
         #
+        label_loop_freq_=None
+        #
     ):
         super().__init__()
         #
@@ -58,6 +60,8 @@ class UrUiInterface(QObject):
             self.comboBox_feed_out_type_32 = comboBox_feed_out_type_32_
             self.comboBox_feed_out_NO_8266 = comboBox_feed_out_NO_8266_
             self.comboBox_feed_out_NO_32 = comboBox_feed_out_NO_32_
+            #
+            self.label_loop_freq = label_loop_freq_
 
             ##### Local variables #####
             self.connected = False
@@ -72,6 +76,9 @@ class UrUiInterface(QObject):
             ##### Initialize #####
             self.urInterface.connectionChangedSignal.connect(self.connectionChangedSlot)
             self.urInterface.inputsFetchedSignal.connect(self.inputsFetchedSlot)
+            self.urInterface.modbusLoopFrequencySignal.connect(
+                self.modbusLoopFrequencySlot
+            )
 
         except Exception as err:
             console.print_exception()
@@ -103,6 +110,37 @@ class UrUiInterface(QObject):
                 self.btn_connect.setText("Connect")
                 self.btn_connect.setStyleSheet("background-color: none; color: none;")
 
+        except Exception as err:
+            console.print_exception()
+
+    def update_combobox_color(self, input_list_=[False, False, False, False]):
+        try:
+            comboBox_list_ = [
+                self.comboBox_feed_in_NO_8266,
+                self.comboBox_feed_in_NO_32,
+                self.comboBox_feed_out_NO_8266,
+                self.comboBox_feed_out_NO_32,
+            ]
+
+            for i in range(len(comboBox_list_)):
+                input_on_ = input_list_[i]
+                color_ = "green" if input_on_ else "none;"
+                font_color_ = "white" if input_on_ else "none;"
+                comboBox_list_[i].setStyleSheet(
+                    f"background-color: {color_}; color: {font_color_}"
+                )
+
+        except Exception as err:
+            console.print_exception()
+
+    def update_actual_freq_label(self, actual_freq_=0.0):
+        try:
+            self.label_loop_freq.setText(str("{:10.4f}".format(actual_freq_)))
+            #
+            if actual_freq_ > 0.0:
+                self.label_loop_freq.setStyleSheet("background-color: #DCEDC8;")
+            else:
+                self.label_loop_freq.setStyleSheet("background-color: #FFCDD2;")
         except Exception as err:
             console.print_exception()
 
@@ -153,7 +191,7 @@ class UrUiInterface(QObject):
     # ########################################################################################### #
     # Signal Slots ############################################################################## #
     # ########################################################################################### #
-
+    ### Settings
     @pyqtSlot(dict)
     def settingLoadedSlot(self, settings_):
         try:
@@ -179,13 +217,15 @@ class UrUiInterface(QObject):
         except Exception as err:
             console.print_exception()
 
+    ### Modbus
     @pyqtSlot(bool)
     def connectionChangedSlot(self, connected_):
         try:
             self.logger.debug(f"connectionChangedSlot(connected_={connected_}) ...")
             self.connected = connected_
-            self.update_ui()
 
+            self.update_ui()
+            self.inputsFetchedSlot([False, False, False, False])
         except Exception as err:
             console.print_exception()
 
@@ -193,6 +233,18 @@ class UrUiInterface(QObject):
     def inputsFetchedSlot(self, input_list_):
         try:
             self.logger.debug(f"inputsFetchedSlot(input_list_={input_list_}) ...")
+            self.update_combobox_color(input_list_)
+            pass
+        except Exception as err:
+            console.print_exception()
+
+    @pyqtSlot(float)
+    def modbusLoopFrequencySlot(self, actual_freq_):
+        try:
+            # self.logger.debug(
+            #     f"modbusLoopFrequencySlot(actual_freq_ = {actual_freq_}) ..."
+            # )
+            self.update_actual_freq_label(actual_freq_)
             pass
         except Exception as err:
             console.print_exception()

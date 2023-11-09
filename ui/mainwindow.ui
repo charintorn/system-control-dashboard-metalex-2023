@@ -2508,7 +2508,7 @@ selection-background-color: #ccc;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_setting_mir_latency_2">
+                <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_1">
                  <property name="minimumSize">
                   <size>
                    <width>75</width>
@@ -2554,7 +2554,7 @@ selection-background-color: #ccc;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_setting_mir_latency_3">
+                <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_2">
                  <property name="minimumSize">
                   <size>
                    <width>75</width>
@@ -2600,7 +2600,7 @@ selection-background-color: #ccc;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_setting_mir_latency_4">
+                <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_3">
                  <property name="minimumSize">
                   <size>
                    <width>75</width>

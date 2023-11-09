@@ -107,7 +107,7 @@ class MirUiInterface(QObject):
     def update_ui(self):
         try:
             ##### inputs #####
-            enable_input_ = self.connected
+            enable_input_ = not self.connected
 
             # text inputs
             self.input_ip.setEnabled(enable_input_)
@@ -215,7 +215,7 @@ class MirUiInterface(QObject):
     @pyqtSlot(list)
     def readModbusUpdatedSlot(self, registers_):
         try:
-            self.logger.debug(f"readModbusUpdatedSlot(registers_ = {registers_}) ...")
+            # self.logger.debug(f"readModbusUpdatedSlot(registers_ = {registers_}) ...")
             #
             for i in range(len(registers_)):
                 reg_value_ = registers_[i]

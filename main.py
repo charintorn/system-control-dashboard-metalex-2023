@@ -36,8 +36,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         ##### Modules #####
         self.DATABASE = Database()
+        #
         self.urInterface_1 = UrInterface(name_="urInterface_1")
-        self.mirInterface = MirInterface(name_="mirInterface", DATABASE_=self.DATABASE)
+        self.urInterface_2 = UrInterface(name_="urInterface_2")
+        self.urInterface_3 = UrInterface(name_="urInterface_3")
+        #
+        self.mirInterface = MirInterface(
+            name_="mirInterface",
+            DATABASE_=self.DATABASE,
+            urInterfaceList_=[
+                self.urInterface_1,
+                self.urInterface_2,
+                self.urInterface_3,
+            ],
+        )
 
         ##### Actions #####
         self.actionFile_load.triggered.connect(self.DATABASE.load)
@@ -99,38 +111,55 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             comboBox_feed_out_type_32_=self.comboBox_station_1_feed_out_sensor_type_32,
             comboBox_feed_out_NO_8266_=self.comboBox_station_1_feed_out_sensor_NO_8266,
             comboBox_feed_out_NO_32_=self.comboBox_station_1_feed_out_sensor_NO_32,
+            #
+            label_loop_freq_=self.label_setting_ur_modbus_loop_freq_1,
         )
-        # self.urUiInterfaceStation_2 = UrUiInterface(
-        #     #
-        #     name_="UR UI Interface #2",
-        #     #
-        #     MAINWINDOW_=self,
-        #     #
-        #     input_ip_=self.lineEdit_ur_station_2_ip,
-        #     input_freq_=self.lineEdit_setting_ur_freq,
-        #     btn_connect_=self.pushButton_ur_station_2_connect,
-        #     #
-        #     comboBox_feed_in_input_type_=self.comboBox_station_2_feed_in_ur_input_type,
-        #     comboBox_feed_out_input_type_=self.comboBox_station_2_feed_out_ur_input_type,
-        #     comboBox_feed_in_input_NO_=self.comboBox_station_2_feed_in_ur_input_NO,
-        #     comboBox_feed_out_input_NO_=self.comboBox_station_2_feed_out_ur_input_NO,
-        # )
-        # self.urUiInterfaceStation_3 = UrUiInterface(
-        #     #
-        #     name_="UR UI Interface #3",
-        #     #
-        #     MAINWINDOW_=self,
-        #     #
-        #     input_ip_=self.lineEdit_ur_station_3_ip,
-        #     input_freq_=self.lineEdit_setting_ur_freq,
-        #     btn_connect_=self.pushButton_ur_station_3_connect,
-        #     #
-        #     comboBox_feed_in_input_type_=self.comboBox_station_3_feed_in_ur_input_type,
-        #     comboBox_feed_out_input_type_=self.comboBox_station_3_feed_out_ur_input_type,
-        #     comboBox_feed_in_input_NO_=self.comboBox_station_3_feed_in_ur_input_NO,
-        #     comboBox_feed_out_input_NO_=self.comboBox_station_3_feed_out_ur_input_NO,
-        # )
-
+        self.urUiInterfaceStation_2 = UrUiInterface(
+            #
+            name_="UR UI Interface #2",
+            station_NO_=2,
+            urInterface_=self.urInterface_2,
+            #
+            MAINWINDOW_=self,
+            #
+            input_ip_=self.lineEdit_ur_station_2_ip,
+            input_freq_=self.lineEdit_setting_ur_freq,
+            btn_connect_=self.pushButton_ur_station_2_connect,
+            #
+            comboBox_feed_in_type_8266_=self.comboBox_station_2_feed_in_sensor_type_8266,
+            comboBox_feed_in_type_32_=self.comboBox_station_2_feed_in_sensor_type_32,
+            comboBox_feed_in_NO_8266_=self.comboBox_station_2_feed_in_sensor_NO_8266,
+            comboBox_feed_in_NO_32_=self.comboBox_station_2_feed_in_sensor_NO_32,
+            comboBox_feed_out_type_8266_=self.comboBox_station_2_feed_out_sensor_type_8266,
+            comboBox_feed_out_type_32_=self.comboBox_station_2_feed_out_sensor_type_32,
+            comboBox_feed_out_NO_8266_=self.comboBox_station_2_feed_out_sensor_NO_8266,
+            comboBox_feed_out_NO_32_=self.comboBox_station_2_feed_out_sensor_NO_32,
+            #
+            label_loop_freq_=self.label_setting_ur_modbus_loop_freq_2,
+        )
+        self.urUiInterfaceStation_3 = UrUiInterface(
+            #
+            name_="UR UI Interface #3",
+            station_NO_=3,
+            urInterface_=self.urInterface_3,
+            #
+            MAINWINDOW_=self,
+            #
+            input_ip_=self.lineEdit_ur_station_3_ip,
+            input_freq_=self.lineEdit_setting_ur_freq,
+            btn_connect_=self.pushButton_ur_station_3_connect,
+            #
+            comboBox_feed_in_type_8266_=self.comboBox_station_3_feed_in_sensor_type_8266,
+            comboBox_feed_in_type_32_=self.comboBox_station_3_feed_in_sensor_type_32,
+            comboBox_feed_in_NO_8266_=self.comboBox_station_3_feed_in_sensor_NO_8266,
+            comboBox_feed_in_NO_32_=self.comboBox_station_3_feed_in_sensor_NO_32,
+            comboBox_feed_out_type_8266_=self.comboBox_station_3_feed_out_sensor_type_8266,
+            comboBox_feed_out_type_32_=self.comboBox_station_3_feed_out_sensor_type_32,
+            comboBox_feed_out_NO_8266_=self.comboBox_station_3_feed_out_sensor_NO_8266,
+            comboBox_feed_out_NO_32_=self.comboBox_station_3_feed_out_sensor_NO_32,
+            #
+            label_loop_freq_=self.label_setting_ur_modbus_loop_freq_3,
+        )
         self.DATABASE.load()
         ### Modules ###
 

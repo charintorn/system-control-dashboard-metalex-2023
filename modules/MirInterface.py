@@ -172,6 +172,8 @@ class ModbusInterface(QObject):
         qty_=24,
         #
         DATABASE_=None,
+        #
+        urInterfaceList_=[],
     ):
         super().__init__()
         #
@@ -189,16 +191,67 @@ class ModbusInterface(QObject):
             #
             self.DATABASE = DATABASE_
             #
+            self.urInterfaceList = urInterfaceList_
+            #
             self.config = {}
+            #
+            self.write_registers = [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+            ]
             #
             self.modbus_thread = threading.Thread(
                 target=self.read_holding_registers, daemon=True
             )
             self.modbus_thread_enable = False
             self.modbus_thread_working = False
-
+            #
+            self.urInterface_1 = None
+            self.urInterface_2 = None
+            self.urInterface_3 = None
+            #
+            for i in range(len(self.urInterfaceList)):
+                if i == 0:
+                    self.urInterface_1 = self.urInterfaceList[i]
+                elif i == 1:
+                    self.urInterface_2 = self.urInterfaceList[i]
+                elif i == 2:
+                    self.urInterface_3 = self.urInterfaceList[i]
+            #
             ##### Custom Signals/Slots #####
             self.DATABASE.settingLoadedSignal.connect(self.settingLoadedSlot)
+            #
+            self.urInterface_1.inputsFetchedSignal.connect(
+                lambda input_bits: self.urInputsFetchedSlot(input_bits, (8 * 1) - 8)
+            )
+            self.urInterface_2.inputsFetchedSignal.connect(
+                lambda input_bits: self.urInputsFetchedSlot(input_bits, (8 * 2) - 8)
+            )
+            self.urInterface_3.inputsFetchedSignal.connect(
+                lambda input_bits: self.urInputsFetchedSlot(input_bits, (8 * 3) - 8)
+            )
         except Exception as err:
             console.print_exception()
 
@@ -314,6 +367,12 @@ class ModbusInterface(QObject):
                     #
                     start_time_ = time.time()
                     #
+                    self.client.write_registers(
+                        address=self.modbus_start_addr,
+                        values=self.write_registers,
+                        slave=255,
+                    )
+                    #
                     read_registers_ = self.read_holding_registers(
                         self.modbus_start_addr, self.modbus_qty
                     )
@@ -324,13 +383,13 @@ class ModbusInterface(QObject):
                         self.readModbusUpdatedSignal.emit(read_registers_)
                     #
                     end_time_ = time.time()
-
+                    #
                     if prev_time_ != None:
-                        actual_freq_ = end_time_ - prev_time_
+                        actual_freq_ = 1 / (end_time_ - prev_time_)
                         self.readModbusActualFrequencySignal.emit(actual_freq_)
                         # console.log(f"actual_freq_: {actual_freq_}")
-                    #
                     prev_time_ = end_time_
+                    #
                     period_ = end_time_ - start_time_
                     #
                     if period_ < time_:
@@ -361,6 +420,20 @@ class ModbusInterface(QObject):
         except Exception as err:
             console.print_exception()
 
+    ### UR
+    @pyqtSlot(list, int)
+    def urInputsFetchedSlot(self, input_bits_=[], reg_idx_=None):
+        try:
+            for i in range(len(input_bits_)):
+                self.write_registers[reg_idx_ + 1] = 1 if input_bits_[i] else 0
+                reg_idx_ += 2  # Increment reg_idx_ by 2 for each iteration
+
+            self.logger.debug(
+                f"urInputsFetchedSlot: {reg_idx_} : {input_bits_} => {self.write_registers}"
+            )
+        except Exception as err:
+            console.print_exception()
+
 
 class MirInterface(QObject):
     connectionStateUpdatedSignal = pyqtSignal(bool)
@@ -378,6 +451,8 @@ class MirInterface(QObject):
         start_addr_=1000,
         #
         DATABASE_=None,
+        #
+        urInterfaceList_=[],
     ):
         super().__init__()
         try:
@@ -388,7 +463,9 @@ class MirInterface(QObject):
             self.DATABASE = DATABASE_
             #
             self.API_INTERFACE = ApiInterface()
-            self.MODBUS_INTERFACE = ModbusInterface(DATABASE_=self.DATABASE)
+            self.MODBUS_INTERFACE = ModbusInterface(
+                DATABASE_=self.DATABASE, urInterfaceList_=urInterfaceList_
+            )
             #
             self.set_ip(ip_)
             self.set_username(username_)
