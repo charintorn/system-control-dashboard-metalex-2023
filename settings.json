@@ -1,7 +1,10 @@
 {
     "mir" : {
         "ip": "192.168.12.20",
-        "start_addr": 1000
+        "start_addr": 1,
+        "username": "distributor",
+        "password": "distributor",
+        "auth_key": "Basic ZGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA=="
     },
     "ur" : [
         {

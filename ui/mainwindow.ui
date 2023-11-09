@@ -265,17 +265,66 @@ selection-background-color: #ccc;</string>
                 </widget>
                </item>
                <item>
-                <spacer name="horizontalSpacer">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_76">
+                   <property name="text">
+                    <string>Read actual frequency</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_setting_mir_actual_freq">
+                   <property name="minimumSize">
+                    <size>
+                     <width>75</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_77">
+                   <property name="text">
+                    <string>Hz</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
                </item>
                <item>
                 <widget class="QLabel" name="label_16">
@@ -586,14 +635,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="4" column="4">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_1">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -851,14 +894,8 @@ padding: 2px 0px;</string>
              </item>
              <item row="4" column="3">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_0">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1377,17 +1414,11 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="4" column="2">
               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_0">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #ffffff;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
-                <string>1</string>
+                <string/>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1758,14 +1789,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="5" column="2">
               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_1">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1777,14 +1802,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="5" column="3">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_2">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1793,14 +1812,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="5" column="4">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_3">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1809,14 +1822,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="6" column="3">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_4">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1825,14 +1832,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="6" column="4">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_5">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1841,14 +1842,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="7" column="3">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_6">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1857,14 +1852,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="7" column="4">
               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_7">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -2257,14 +2246,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="6" column="2">
               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_2">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -2276,14 +2259,8 @@ selection-background-color: #ccc;</string>
              </item>
              <item row="7" column="2">
               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_3">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
+               <property name="enabled">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -2296,7 +2273,7 @@ selection-background-color: #ccc;</string>
              <item row="9" column="2">
               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_4">
                <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
+                <string notr="true"> background-color: #ffffff;
 color: #333; 
 padding: 2px;
 border: 1px solid #ccc;
@@ -2305,7 +2282,7 @@ selection-color: black;
 selection-background-color: #ccc;</string>
                </property>
                <property name="text">
-                <string/>
+                <string>1</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2520,6 +2497,144 @@ selection-background-color: #ccc;</string>
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                </property>
               </widget>
+             </item>
+             <item row="11" column="5">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Read</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_setting_mir_latency_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>Hz</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="16" column="5">
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>Read</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_setting_mir_latency_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_73">
+                 <property name="text">
+                  <string>Hz</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="21" column="5">
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_74">
+                 <property name="text">
+                  <string>Read</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_setting_mir_latency_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_75">
+                 <property name="text">
+                  <string>Hz</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>

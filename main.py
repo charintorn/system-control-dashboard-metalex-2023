@@ -17,6 +17,7 @@ from modules.Logger import Logger
 from modules.rich_setup import *
 
 from modules.Database import Database
+from modules.MirInterface import MirInterface
 from modules.UrInterface import UrInterface
 
 
@@ -35,7 +36,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         ##### Modules #####
         self.DATABASE = Database()
-        self.urInterface_1 = UrInterface("urInterface_1")
+        self.urInterface_1 = UrInterface(name_="urInterface_1")
+        self.mirInterface = MirInterface(name_="mirInterface", DATABASE_=self.DATABASE)
 
         ##### Actions #####
         self.actionFile_load.triggered.connect(self.DATABASE.load)
@@ -74,7 +76,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.verticalLayout_groupBox_mir.addWidget(self.mirDashboardWidget)
 
         ## Setting
-        self.mirUiInterface = MirUiInterface(MAINWINDOW_=self)
+        self.mirUiInterface = MirUiInterface(
+            MAINWINDOW_=self, DATABASE_=self.DATABASE, mirInterface_=self.mirInterface
+        )
         self.urUiInterfaceStation_1 = UrUiInterface(
             #
             name_="UR UI Interface #1",

@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets
-from PyQt5.QtCore import QObject, pyqtSignal
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot
 
 
 from modules.Logger import Logger
@@ -40,7 +40,6 @@ class ApiInterface(QObject):
     # ########################################################################################### #
     # Credentials ############################################################################### #
     # ########################################################################################### #
-
     def set_username(self, username_=""):
         try:
             self.logger.debug(f"set_username(username_={username_}):: ...")
@@ -69,27 +68,6 @@ class ApiInterface(QObject):
 
         except Exception as err:
             console.print_exception()
-
-    # def _generate_credential(self):
-    #     try:
-    #         # self.logger.debug(f"_generate_credential():: ...")
-
-    #         credential_text_ = f"{self.username}:{self.password}"
-
-    #         self.credential = base64.b64encode(credential_text_.encode()).decode(
-    #             "utf-8"
-    #         )
-    #         credentials_encoded = base64.b64encode(credential_text_.encode()).decode(
-    #             "utf-8"
-    #         )
-    #         self.logger.debug(
-    #             f"_generate_credential():: credential_text_ = {credential_text_}"
-    #         )
-    #         self.logger.debug(f"_generate_credential():: {self.credential}")
-    #         self.auth_header = f"Basic {self.credential}"
-
-    #     except Exception as err:
-    #         console.print_exception()
 
     # ########################################################################################### #
     # URL ####################################################################################### #
@@ -180,16 +158,20 @@ class ApiInterface(QObject):
 
 class ModbusInterface(QObject):
     #
+    connectionChangedSignal = pyqtSignal(bool)
     readModbusUpdatedSignal = pyqtSignal(list)
+    readModbusActualFrequencySignal = pyqtSignal(float)
 
     #
     def __init__(
         self,
-        name_="API Interface",
+        name_="ModbusInterface",
         ip_="192.168.12.",
         frequency_=1,
         start_addr_=1000,
         qty_=24,
+        #
+        DATABASE_=None,
     ):
         super().__init__()
         #
@@ -205,23 +187,29 @@ class ModbusInterface(QObject):
             self.modbus_start_addr = start_addr_
             self.modbus_qty = qty_
             #
+            self.DATABASE = DATABASE_
+            #
+            self.config = {}
+            #
             self.modbus_thread = threading.Thread(
-                target=self.read_robot_status_loop, daemon=True
+                target=self.read_holding_registers, daemon=True
             )
             self.modbus_thread_enable = False
             self.modbus_thread_working = False
 
+            ##### Custom Signals/Slots #####
+            self.DATABASE.settingLoadedSignal.connect(self.settingLoadedSlot)
         except Exception as err:
             console.print_exception()
 
     # ########################################################################################### #
     # Configuration ############################################################################# #
     # ########################################################################################### #
-    def set_ip(self, set_ip_=""):
+    def set_ip(self, ip_=""):
         try:
-            self.logger.debug(f"set_ip(set_ip_ = {set_ip_}):: ...")
+            self.logger.debug(f"set_ip(set_ip_ = {ip_}):: ...")
 
-            self.ip = set_ip_
+            self.ip = ip_
 
         except Exception as err:
             console.print_exception()
@@ -235,11 +223,13 @@ class ModbusInterface(QObject):
         except Exception as err:
             console.print_exception()
 
-    def set_start_address(self, addr_=1000):
+    def set_start_address(self, addr_=1):
         try:
             self.logger.debug(f"set_start_address(addr_ = {addr_}) :: ...")
 
-            self.modbus_start_addr = addr_
+            self.modbus_start_addr = (
+                addr_ + 999
+            )  # mir address starts at reg NO 1000 (MiR reg 1 = reg 1000)
 
         except Exception as err:
             console.print_exception()
@@ -251,7 +241,9 @@ class ModbusInterface(QObject):
         try:
             uri_ = f"{self.ip}"
 
-            self.logger.info(f"connect(): to {self.NAME} : {uri_} ...")
+            self.logger.info(
+                f"connect(): to {self.ip}, {self.modbus_start_addr}, {self.modbus_qty}, {self.frequency} ..."
+            )
 
             self.client = ModbusTcpClient(uri_)
             self.client.connect()
@@ -294,47 +286,60 @@ class ModbusInterface(QObject):
     # ########################################################################################### #
     # MODBUS #################################################################################### #
     # ########################################################################################### #
-    def read_holding_register(self, reg_NO_=1000, qty_=24):
+    def read_holding_registers(self, reg_NO_=1000, qty_=24):
         try:
             # self.logger.debug(f"read_holding_register(reg_NO_ = {reg_NO_}) ...")
             result_ = self.client.read_holding_registers(reg_NO_, qty_)
             registers_ = result_.registers
-            self.logger.debug(
-                f"read_holding_register({reg_NO_}, {qty_}) :: => {registers_}"
-            )
+            # self.logger.debug(
+            #     f"read_holding_register({reg_NO_}, {qty_}) :: => {registers_}"
+            # )
             return registers_
         except Exception as err:
             console.print_exception()
-            return None
+            raise err
 
     def read_write_loop(self):
         try:
-            self.logger.info(f"read_write_loop(): has begun!, {self.freq} Hz")
+            self.logger.info(f"read_write_loop(): has begun!, {self.frequency} Hz")
             #
             self.modbus_thread_working = True
             #
-            time_ = 1 / self.freq
+            time_ = 1 / self.frequency
+            #
+            prev_time_ = None
             #
             while self.modbus_thread_enable:
                 try:
                     #
                     start_time_ = time.time()
                     #
-                    read_registers_ = self.read_holding_register(
+                    read_registers_ = self.read_holding_registers(
                         self.modbus_start_addr, self.modbus_qty
                     )
-                    console.log("read_registers_: {read_registers_}")
+                    # console.log(f"read_registers_: {read_registers_}")
                     # console.print(f"input_bits_ => {input_bits_}")
-                    self.readModbusUpdatedSignal.emit(read_registers_)
+
+                    if read_registers_ != None:
+                        self.readModbusUpdatedSignal.emit(read_registers_)
                     #
                     end_time_ = time.time()
+
+                    if prev_time_ != None:
+                        actual_freq_ = end_time_ - prev_time_
+                        self.readModbusActualFrequencySignal.emit(actual_freq_)
+                        # console.log(f"actual_freq_: {actual_freq_}")
+                    #
+                    prev_time_ = end_time_
                     period_ = end_time_ - start_time_
                     #
                     if period_ < time_:
                         time.sleep(time_ - period_)
                     #
+
                 except Exception as err:
                     console.print_exception()
+                    self.readModbusActualFrequencySignal.emit(0.0)
 
         except Exception as err:
             console.print_exception()
@@ -342,6 +347,19 @@ class ModbusInterface(QObject):
         finally:
             self.modbus_thread_working = False
             self.logger.warning("read_holding_registers_loop has stopped!")
+
+    ##### Custom Signals/Slots #####
+    @pyqtSlot(dict)
+    def settingLoadedSlot(self, settings_):
+        try:
+            self.config = settings_["mir"]
+            self.logger.info(f"settingLoadedSlot({self.config}) :: ...")
+            #
+            self.set_ip(ip_=self.config["ip"])
+            self.set_start_address(addr_=self.config["start_addr"])
+
+        except Exception as err:
+            console.print_exception()
 
 
 class MirInterface(QObject):
@@ -355,7 +373,11 @@ class MirInterface(QObject):
         username_="",
         password_="",
         auth_key_="",
+        #
         frequency_=1,
+        start_addr_=1000,
+        #
+        DATABASE_=None,
     ):
         super().__init__()
         try:
@@ -363,45 +385,53 @@ class MirInterface(QObject):
             self.logger = Logger(name_)
             self.logger.debug("Initilizing ...")
             #
-            self._API_INTERFACE = ApiInterface()
-            self._MODBUS_INTERFACE = ModbusInterface()
+            self.DATABASE = DATABASE_
+            #
+            self.API_INTERFACE = ApiInterface()
+            self.MODBUS_INTERFACE = ModbusInterface(DATABASE_=self.DATABASE)
             #
             self.set_ip(ip_)
             self.set_username(username_)
             self.set_password(password_)
             self.set_auth_key(auth_key_)
             self.set_frequency(frequency_)
+            self.set_modbus_start_addr(start_addr_)
 
             ### local variables ###
             self.frequency = frequency_
-
+            #
             self.client = None
-
             self.connected = False
-
-            ### signal/slot ###
-            # self.pushButton_connect.clicked.connect(self.connect_disconnect)
 
         except Exception as err:
             console.print_exception()
 
+    # ########################################################################################### #
+    # Configurations ############################################################################ #
+    # ########################################################################################### #
     def set_ip(self, ip_):
-        self._API_INTERFACE.set_ip(ip_)
-        self._MODBUS_INTERFACE.set_ip(ip_)
+        self.API_INTERFACE.set_ip(ip_)
+        self.MODBUS_INTERFACE.set_ip(ip_)
 
     def set_username(self, username_):
-        self._API_INTERFACE.set_username(username_)
+        self.API_INTERFACE.set_username(username_)
 
     def set_password(self, password_):
-        self._API_INTERFACE.set_password(password_)
+        self.API_INTERFACE.set_password(password_)
 
     def set_auth_key(self, password_):
-        self._API_INTERFACE.set_auth_key(password_)
+        self.API_INTERFACE.set_auth_key(password_)
 
     def set_frequency(self, frequency_):
         try:
-            self.logger.debug(f"set_frequency(frequency_= {frequency_}):: ...")
-            self._MODBUS_INTERFACE.set_frequency(frequency_)
+            self.logger.debug(f"set_frequency(frequency_ = {frequency_}) :: ...")
+            self.MODBUS_INTERFACE.set_frequency(frequency_)
+        except Exception as err:
+            console.print_exception()
+
+    def set_modbus_start_addr(self, addr_=1000):
+        try:
+            self.MODBUS_INTERFACE.set_start_address(addr_)
         except Exception as err:
             console.print_exception()
 
@@ -417,11 +447,7 @@ class MirInterface(QObject):
 
     def connect(self):
         try:
-            self.modbus_thread_enable = True
-            self.modbus_thread = threading.Thread(
-                target=self.read_robot_status_loop, daemon=True
-            )
-            self.modbus_thread.start()
+            self.MODBUS_INTERFACE.connect()
             #
             self.connected = True
             self.connectionStateUpdatedSignal.emit(self.connected)
@@ -430,10 +456,7 @@ class MirInterface(QObject):
 
     def disconnect(self):
         try:
-            self.modbus_thread_enable = False
-            #
-            while not self.modbus_thread_working:
-                time.sleep(0.1)
+            self.MODBUS_INTERFACE.disconnect()
             #
             self.connected = False
             self.connectionStateUpdatedSignal.emit(self.connected)
@@ -446,7 +469,7 @@ class MirInterface(QObject):
     def read_robot_status(self):
         try:
             self.logger.debug(f"read_robot_status() :: ...")
-            res_ = self._API_INTERFACE.api_request("get", "/status", {})
+            res_ = self.API_INTERFACE.api_request("get", "/status", {})
             return res_
         except Exception as err:
             console.print_exception()

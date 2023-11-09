@@ -158,11 +158,11 @@ class UrUiInterface(QObject):
     def settingLoadedSlot(self, settings_):
         try:
             self.logger.debug(
-                f"station {self.station_NO}, settingLoadedSlot(settings_={settings_}) ..."
+                f"station {self.station_NO}, settingLoadedSlot(settings) ..."
             )
             #
             self.config = settings_["ur"][self.station_NO - 1]
-            self.logger.debug(f"station {self.station_NO}, config: {self.config} ...")
+            self.logger.debug(f"\t > config: {self.config} ...")
             #
             self.input_ip.setText(self.config["ip"])
             #
