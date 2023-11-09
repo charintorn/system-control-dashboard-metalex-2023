@@ -2503,7 +2503,7 @@ selection-background-color: #ccc;</string>
                <item>
                 <widget class="QLabel" name="label_10">
                  <property name="text">
-                  <string>Read</string>
+                  <string>RD/WR</string>
                  </property>
                 </widget>
                </item>
@@ -2549,7 +2549,7 @@ selection-background-color: #ccc;</string>
                <item>
                 <widget class="QLabel" name="label_11">
                  <property name="text">
-                  <string>Read</string>
+                  <string>RD/WR</string>
                  </property>
                 </widget>
                </item>
@@ -2595,7 +2595,7 @@ selection-background-color: #ccc;</string>
                <item>
                 <widget class="QLabel" name="label_74">
                  <property name="text">
-                  <string>Read</string>
+                  <string>RD/WR</string>
                  </property>
                 </widget>
                </item>
