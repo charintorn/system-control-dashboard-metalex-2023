@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>939</width>
-    <height>890</height>
+    <width>1107</width>
+    <height>906</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -469,2190 +469,2209 @@ selection-background-color: #ccc;</string>
              </item>
             </layout>
            </item>
-           <item>
-            <layout class="QGridLayout" name="gridLayout_3">
-             <item row="13" column="4">
-              <widget class="Line" name="line_17">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="6">
-              <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_type_8266">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="15" column="1">
-              <widget class="QLabel" name="label_66">
-               <property name="text">
-                <string>Feed-in ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="7">
-              <widget class="Line" name="line_53">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="0">
-              <widget class="QLabel" name="label_14">
-               <property name="text">
-                <string>2 : Assembly</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QLabel" name="label_4">
-               <property name="text">
-                <string>Feed-in ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QLabel" name="label_30">
-               <property name="text">
-                <string>Station</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="7">
-              <widget class="QLabel" name="label_61">
-               <property name="text">
-                <string>Input NO.</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="7">
-              <widget class="Line" name="line_48">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="0">
-              <widget class="Line" name="line_2">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="4">
-              <widget class="Line" name="line_14">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="1">
-              <widget class="QLabel" name="label_69">
-               <property name="text">
-                <string>Feed-in ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="7">
-              <widget class="Line" name="line_51">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="4">
-              <widget class="Line" name="line_45">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="5">
-              <widget class="Line" name="line_5">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="7">
-              <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_NO_8266">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="4" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_1">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="3">
-              <widget class="Line" name="line_16">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
-              <widget class="Line" name="line_42">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="1">
-              <widget class="QLabel" name="label_63">
-               <property name="text">
-                <string>Feed-out ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="0">
-              <widget class="Line" name="line">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="7">
-              <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_NO_32">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="1" column="4">
-              <widget class="QLabel" name="label_27">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(3, 169, 244);</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="1">
-              <widget class="QLabel" name="label_64">
-               <property name="text">
-                <string>Feed-in ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="6">
-              <widget class="Line" name="line_21">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="5">
-              <widget class="QLabel" name="label_34">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(63, 81, 181);
-color: rgb(255, 255, 255);
-padding: 2px 0px;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="5">
-              <widget class="QPushButton" name="pushButton_ur_station_1_connect">
-               <property name="text">
-                <string>Connect</string>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="1">
-              <widget class="QLabel" name="label_15">
-               <property name="text">
-                <string>Feed-in ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="6">
-              <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_type_32">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="12" column="1">
-              <widget class="QLabel" name="label_13">
-               <property name="text">
-                <string>Feed-out ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="1">
-              <widget class="Line" name="line_6">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <widget class="QLabel" name="label_29">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(3, 169, 244);</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="17" column="1">
-              <widget class="QLabel" name="label_68">
-               <property name="text">
-                <string>Feed-out ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="15" column="7">
-              <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_NO_32">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="3" column="5">
-              <widget class="Line" name="line_46">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="2">
-              <widget class="Line" name="line_43">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="label_23">
-               <property name="text">
-                <string>Station Sensors</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="1">
-              <widget class="QLabel" name="label_12">
-               <property name="text">
-                <string>Feed-in ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="16" column="1">
-              <widget class="QLabel" name="label_67">
-               <property name="text">
-                <string>Feed-out ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_0">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="6">
-              <widget class="QLabel" name="label_62">
-               <property name="text">
-                <string>Input Type</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="2">
-              <widget class="Line" name="line_18">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="2">
-              <widget class="QLabel" name="label_28">
-               <property name="text">
-                <string>Register NO.</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="5">
-              <widget class="QLabel" name="label_32">
-               <property name="text">
-                <string>IP Address</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="1">
-              <widget class="QLabel" name="label_65">
-               <property name="text">
-                <string>Feed-out ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="5">
-              <widget class="Line" name="line_7">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="3">
-              <widget class="QLabel" name="label_24">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(3, 169, 244);
-color: rgb(255, 255, 255);
-padding: 2px 0px;</string>
-               </property>
-               <property name="text">
-                <string>MiR Registers (32-bit)</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="label_7">
-               <property name="text">
-                <string>0 : Raw material</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="3">
-              <widget class="Line" name="line_13">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="6">
-              <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_type_32">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="18" column="6">
-              <widget class="Line" name="line_52">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="21" column="1">
-              <widget class="QLabel" name="label_71">
-               <property name="text">
-                <string>Feed-out ESP8266</string>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="5">
-              <widget class="Line" name="line_9">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="7">
-              <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_NO_32">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="15" column="6">
-              <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_type_32">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="8" column="2">
-              <widget class="Line" name="line_12">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="3">
-              <widget class="QLabel" name="label_25">
-               <property name="text">
-                <string>Most Significant Bit (MSB, 16-bit)</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="7">
-              <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_NO_8266">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="13" column="6">
-              <widget class="Line" name="line_50">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="1">
-              <widget class="QLabel" name="label_33">
-               <property name="text">
-                <string>Feed-in ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="0">
-              <widget class="QLabel" name="label_8">
-               <property name="text">
-                <string>3 : Inspection</string>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="7">
-              <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_NO_8266">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="15" column="5">
-              <widget class="QPushButton" name="pushButton_ur_station_2_connect">
-               <property name="text">
-                <string>Connect</string>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="6">
-              <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_type_8266">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="7" column="1">
-              <widget class="QLabel" name="label_6">
-               <property name="text">
-                <string>Feed-out ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="7">
-              <widget class="QLabel" name="label_35">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(63, 81, 181);
-color: rgb(255, 255, 255);
-padding: 2px 0px;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="5">
-              <widget class="QLineEdit" name="lineEdit_ur_station_1_ip">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #ffffff;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string>127.0.0.1</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="3">
-              <widget class="Line" name="line_44">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="5">
-              <widget class="QPushButton" name="pushButton_ur_station_3_connect">
-               <property name="text">
-                <string>Connect</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="6">
-              <widget class="QLabel" name="label_31">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(63, 81, 181);
-color: rgb(255, 255, 255);
-padding: 2px 0px;</string>
-               </property>
-               <property name="text">
-                <string>UR</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="Line" name="line_3">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="6">
-              <widget class="Line" name="line_47">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="5">
-              <widget class="QLineEdit" name="lineEdit_ur_station_3_ip">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #ffffff;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string>127.0.0.1</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="Line" name="line_41">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="1">
-              <widget class="QLabel" name="label_70">
-               <property name="text">
-                <string>Feed-in ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="0">
-              <widget class="QLabel" name="label_5">
-               <property name="text">
-                <string>1 : Screwing</string>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="4">
-              <widget class="Line" name="line_20">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="13" column="2">
-              <widget class="Line" name="line_15">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="1">
-              <widget class="Line" name="line_8">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="18" column="3">
-              <widget class="Line" name="line_19">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="5">
-              <widget class="QLineEdit" name="lineEdit_ur_station_2_ip">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #ffffff;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string>127.0.0.1</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="4">
-              <widget class="QLabel" name="label_26">
-               <property name="text">
-                <string>Least Significant Bit (LSB, 16-bit)</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="7">
-              <widget class="Line" name="line_49">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="6">
-              <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_type_8266">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="4" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_0">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="1">
-              <widget class="Line" name="line_4">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item row="22" column="1">
-              <widget class="QLabel" name="label_72">
-               <property name="text">
-                <string>Feed-out ESP32</string>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="6">
-              <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_type_8266">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="12" column="6">
-              <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_type_32">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="16" column="6">
-              <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_type_8266">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="17" column="6">
-              <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_type_32">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="21" column="6">
-              <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_type_8266">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="22" column="6">
-              <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_type_32">
-               <item>
-                <property name="text">
-                 <string>DI</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>CI</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="21" column="7">
-              <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_NO_8266">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="22" column="7">
-              <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_NO_32">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="16" column="7">
-              <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_NO_8266">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="17" column="7">
-              <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_NO_32">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="11" column="7">
-              <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_NO_8266">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="12" column="7">
-              <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_NO_32">
-               <item>
-                <property name="text">
-                 <string>0</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>4</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>5</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>6</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>7</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-             <item row="5" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_1">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_2">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="5" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_3">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_4">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_5">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_6">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_7">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_8">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_9">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_10">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_11">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_12">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_13">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="12" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_14">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="12" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_15">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_16">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_17">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="15" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_18">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="15" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_19">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="16" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_20">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="16" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_21">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="17" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_22">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="17" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_23">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_24">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_25">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_26">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_27">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="21" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_28">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="21" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_29">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="22" column="3">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_30">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="22" column="4">
-              <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_31">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_2">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="7" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_3">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="9" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_4">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #ffffff;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string>1</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="10" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_5">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_6">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="12" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_7">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="14" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_8">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="15" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_9">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="16" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_10">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="17" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_11">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="19" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_12">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="20" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_13">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="21" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_14">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="22" column="2">
-              <widget class="QLineEdit" name="lineEdit_mir_reg_NO_15">
-               <property name="styleSheet">
-                <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="11" column="5">
-              <layout class="QHBoxLayout" name="horizontalLayout_4">
-               <item>
-                <widget class="QLabel" name="label_10">
-                 <property name="text">
-                  <string>RD/WR</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_1">
-                 <property name="minimumSize">
-                  <size>
-                   <width>75</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>50</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_9">
-                 <property name="text">
-                  <string>Hz</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item row="16" column="5">
-              <layout class="QHBoxLayout" name="horizontalLayout_5">
-               <item>
-                <widget class="QLabel" name="label_11">
-                 <property name="text">
-                  <string>RD/WR</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>75</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>50</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_73">
-                 <property name="text">
-                  <string>Hz</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item row="21" column="5">
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QLabel" name="label_74">
-                 <property name="text">
-                  <string>RD/WR</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_3">
-                 <property name="minimumSize">
-                  <size>
-                   <width>75</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>50</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"> background-color: #f2f2f2;
-color: #333; 
-padding: 2px;
-border: 1px solid #ccc;
-border-radius: 2px;
-selection-color: black;
-selection-background-color: #ccc;</string>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_75">
-                 <property name="text">
-                  <string>Hz</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </item>
           </layout>
          </widget>
         </item>
         <item>
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
           </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1063</width>
+             <height>557</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_13">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="13" column="4">
+               <widget class="Line" name="line_17">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="6">
+               <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_type_8266">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="15" column="1">
+               <widget class="QLabel" name="label_66">
+                <property name="text">
+                 <string>Feed-in ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="7">
+               <widget class="Line" name="line_53">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="0">
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>2 : Assembly</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Feed-in ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_30">
+                <property name="text">
+                 <string>Station</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="7">
+               <widget class="QLabel" name="label_61">
+                <property name="text">
+                 <string>Input NO.</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="7">
+               <widget class="Line" name="line_48">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="0">
+               <widget class="Line" name="line_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="4">
+               <widget class="Line" name="line_14">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="1">
+               <widget class="QLabel" name="label_69">
+                <property name="text">
+                 <string>Feed-in ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="7">
+               <widget class="Line" name="line_51">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="4">
+               <widget class="Line" name="line_45">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="5">
+               <widget class="Line" name="line_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="7">
+               <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_NO_8266">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="4" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_1">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="3">
+               <widget class="Line" name="line_16">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="Line" name="line_42">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QLabel" name="label_63">
+                <property name="text">
+                 <string>Feed-out ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="0">
+               <widget class="Line" name="line">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="7">
+               <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_NO_32">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QLabel" name="label_27">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(3, 169, 244);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="1">
+               <widget class="QLabel" name="label_64">
+                <property name="text">
+                 <string>Feed-in ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="6">
+               <widget class="Line" name="line_21">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="5">
+               <widget class="QLabel" name="label_34">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(63, 81, 181);
+color: rgb(255, 255, 255);
+padding: 2px 0px;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="5">
+               <widget class="QPushButton" name="pushButton_ur_station_1_connect">
+                <property name="text">
+                 <string>Connect</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="1">
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>Feed-in ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="6">
+               <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_type_32">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="12" column="1">
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string>Feed-out ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="1">
+               <widget class="Line" name="line_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="label_29">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(3, 169, 244);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="1">
+               <widget class="QLabel" name="label_68">
+                <property name="text">
+                 <string>Feed-out ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="7">
+               <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_NO_32">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="3" column="5">
+               <widget class="Line" name="line_46">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="Line" name="line_43">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>Station Sensors</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="1">
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string>Feed-in ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="1">
+               <widget class="QLabel" name="label_67">
+                <property name="text">
+                 <string>Feed-out ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_0">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="6">
+               <widget class="QLabel" name="label_62">
+                <property name="text">
+                 <string>Input Type</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="2">
+               <widget class="Line" name="line_18">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLabel" name="label_28">
+                <property name="text">
+                 <string>Register NO.</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="5">
+               <widget class="QLabel" name="label_32">
+                <property name="text">
+                 <string>IP Address</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="1">
+               <widget class="QLabel" name="label_65">
+                <property name="text">
+                 <string>Feed-out ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="5">
+               <widget class="Line" name="line_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QLabel" name="label_24">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(3, 169, 244);
+color: rgb(255, 255, 255);
+padding: 2px 0px;</string>
+                </property>
+                <property name="text">
+                 <string>MiR Registers (32-bit)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>0 : Raw material</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="3">
+               <widget class="Line" name="line_13">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="6">
+               <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_type_32">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="18" column="6">
+               <widget class="Line" name="line_52">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="1">
+               <widget class="QLabel" name="label_71">
+                <property name="text">
+                 <string>Feed-out ESP8266</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="5">
+               <widget class="Line" name="line_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="7">
+               <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_NO_32">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="15" column="6">
+               <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_type_32">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="8" column="2">
+               <widget class="Line" name="line_12">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>Most Significant Bit (MSB, 16-bit)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="7">
+               <widget class="QComboBox" name="comboBox_station_3_feed_in_sensor_NO_8266">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="13" column="6">
+               <widget class="Line" name="line_50">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QLabel" name="label_33">
+                <property name="text">
+                 <string>Feed-in ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>3 : Inspection</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="7">
+               <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_NO_8266">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="15" column="5">
+               <widget class="QPushButton" name="pushButton_ur_station_2_connect">
+                <property name="text">
+                 <string>Connect</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="6">
+               <widget class="QComboBox" name="comboBox_station_2_feed_in_sensor_type_8266">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Feed-out ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="7">
+               <widget class="QLabel" name="label_35">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(63, 81, 181);
+color: rgb(255, 255, 255);
+padding: 2px 0px;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="5">
+               <widget class="QLineEdit" name="lineEdit_ur_station_1_ip">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #ffffff;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string>127.0.0.1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="Line" name="line_44">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="5">
+               <widget class="QPushButton" name="pushButton_ur_station_3_connect">
+                <property name="text">
+                 <string>Connect</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="6">
+               <widget class="QLabel" name="label_31">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(63, 81, 181);
+color: rgb(255, 255, 255);
+padding: 2px 0px;</string>
+                </property>
+                <property name="text">
+                 <string>UR</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="Line" name="line_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="6">
+               <widget class="Line" name="line_47">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="5">
+               <widget class="QLineEdit" name="lineEdit_ur_station_3_ip">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #ffffff;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string>127.0.0.1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="Line" name="line_41">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="1">
+               <widget class="QLabel" name="label_70">
+                <property name="text">
+                 <string>Feed-in ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>1 : Screwing</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="4">
+               <widget class="Line" name="line_20">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="2">
+               <widget class="Line" name="line_15">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="1">
+               <widget class="Line" name="line_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="3">
+               <widget class="Line" name="line_19">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="5">
+               <widget class="QLineEdit" name="lineEdit_ur_station_2_ip">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #ffffff;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string>127.0.0.1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="4">
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>Least Significant Bit (LSB, 16-bit)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="7">
+               <widget class="Line" name="line_49">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="6">
+               <widget class="QComboBox" name="comboBox_station_1_feed_in_sensor_type_8266">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_0">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="Line" name="line_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="22" column="1">
+               <widget class="QLabel" name="label_72">
+                <property name="text">
+                 <string>Feed-out ESP32</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="6">
+               <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_type_8266">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="12" column="6">
+               <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_type_32">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="16" column="6">
+               <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_type_8266">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="17" column="6">
+               <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_type_32">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="21" column="6">
+               <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_type_8266">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="22" column="6">
+               <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_type_32">
+                <item>
+                 <property name="text">
+                  <string>DI</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CI</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="21" column="7">
+               <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_NO_8266">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="22" column="7">
+               <widget class="QComboBox" name="comboBox_station_3_feed_out_sensor_NO_32">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="16" column="7">
+               <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_NO_8266">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="17" column="7">
+               <widget class="QComboBox" name="comboBox_station_2_feed_out_sensor_NO_32">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="11" column="7">
+               <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_NO_8266">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="12" column="7">
+               <widget class="QComboBox" name="comboBox_station_1_feed_out_sensor_NO_32">
+                <item>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_1">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_2">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_4">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_5">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_6">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_7">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_8">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_9">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_10">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_11">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_12">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_13">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_14">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_15">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_16">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_17">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_18">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_19">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_20">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_21">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_22">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_23">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_24">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_25">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_26">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_27">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_28">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_29">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="22" column="3">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_30">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="22" column="4">
+               <widget class="QLineEdit" name="lineEdit_mir_modbus_addr_NO_31">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_2">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_4">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #ffffff;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string>1</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_5">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_6">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_7">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_8">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_9">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_10">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_11">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_12">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_13">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_14">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="22" column="2">
+               <widget class="QLineEdit" name="lineEdit_mir_reg_NO_15">
+                <property name="styleSheet">
+                 <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="5">
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QLabel" name="label_10">
+                  <property name="text">
+                   <string>RD/WR</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_1">
+                  <property name="minimumSize">
+                   <size>
+                    <width>75</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_9">
+                  <property name="text">
+                   <string>Hz</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="16" column="5">
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QLabel" name="label_11">
+                  <property name="text">
+                   <string>RD/WR</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>75</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_73">
+                  <property name="text">
+                   <string>Hz</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="21" column="5">
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label_74">
+                  <property name="text">
+                   <string>RD/WR</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_setting_ur_modbus_loop_freq_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>75</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"> background-color: #f2f2f2;
+color: #333; 
+padding: 2px;
+border: 1px solid #ccc;
+border-radius: 2px;
+selection-color: black;
+selection-background-color: #ccc;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_75">
+                  <property name="text">
+                   <string>Hz</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>894</width>
+                <height>252</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -2665,7 +2684,7 @@ selection-background-color: #ccc;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>939</width>
+     <width>1107</width>
      <height>21</height>
     </rect>
    </property>
