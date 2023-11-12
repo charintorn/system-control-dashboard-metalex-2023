@@ -68,7 +68,7 @@ class ColoredFormatter(logging.Formatter):
 class Logger:
     def __init__(self, name=""):
         self.logger = logging.getLogger(name)
-        self.logger.setLevel(logging.DEBUG)
+        self.logger.setLevel(logging.INFO)
         self.logger.name = name  # Set the logger name explicitly
 
         # Create and set up the RichHandler
