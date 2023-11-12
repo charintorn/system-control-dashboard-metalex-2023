@@ -214,6 +214,10 @@ class UrUiInterface(QObject):
             self.comboBox_feed_out_NO_8266.setCurrentText(str(self.config["NO"][2]))
             self.comboBox_feed_out_NO_32.setCurrentText(str(self.config["NO"][3]))
             #
+            # Set the autual UR interface
+            self.urInterface.set_ip(self.config["ip"])
+            self.urInterface.set_input_types(self.config["types"])
+            self.urInterface.set_input_NOs(self.config["NO"])
         except Exception as err:
             console.print_exception()
 

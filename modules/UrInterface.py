@@ -88,6 +88,21 @@ class UrInterface(QObject):
         except Exception as err:
             console.print_exception()
 
+    def get_config(self):
+        try:
+            config_ = (
+                {
+                    "ip": self.ip,
+                    "types": self.input_types,
+                    "NO": self.input_NOs,
+                },
+            )
+
+            return config_
+
+        except Exception as err:
+            console.print_exception()
+
     # ########################################################################################### #
     # Connection ################################################################################ #
     # ########################################################################################### #

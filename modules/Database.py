@@ -33,14 +33,19 @@ class Database(QObject):
             os.chdir(self.base_path)
             #
             self.logger.info(f"base_path: {self.base_path}")
-
+            #
+            self.settings_file_path = os.path.join(self.base_path, "settings.json")
+            #
+            self.get_mir_config = None
+            self.get_ur_1_config = None
+            self.get_ur_2_config = None
+            self.get_ur_3_config = None
         except Exception as err:
             console.print_exception()
 
     def load_settings(self):
         try:
-            settings_file_path = os.path.join(self.base_path, "settings.json")
-            with open(settings_file_path, "r") as settings_file:
+            with open(self.settings_file_path, "r") as settings_file:
                 settings = json.load(settings_file)
             return settings
         except Exception as err:
@@ -54,5 +59,31 @@ class Database(QObject):
             settings_ = self.load_settings()
             self.settingLoadedSignal.emit(settings_)
             # console.log(f"{type(settings_)} settings_ = {settings_}")
+        except Exception as err:
+            console.print_exception()
+
+    def save(self):
+        try:
+            #
+            self.logger.debug("save() :: ...")
+            #
+            mir_config_ = self.get_mir_config()
+            ur_1_config_ = self.get_ur_1_config()
+            ur_2_config_ = self.get_ur_2_config()
+            ur_3_config_ = self.get_ur_3_config()
+            #
+            settings_ = {
+                "mir": mir_config_,
+                "ur": [ur_1_config_, ur_2_config_, ur_3_config_],
+            }
+            #
+            self.logger.info(f"\t > settings: {settings_}")
+
+            return None
+            # Save the settings to a JSON file
+            with open(self.settings_file_path, "w") as settings_file:
+                json.dump(settings_, settings_file, indent=4)
+
+            self.logger.info("Settings saved successfully.")
         except Exception as err:
             console.print_exception()

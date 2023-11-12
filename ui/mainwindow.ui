@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>AAE System Control Dashboard - Metalex 2023</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recources/resources.qrc">
+    <normaloff>:/logo/logo/metalex.jpg</normaloff>:/logo/logo/metalex.jpg</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -2727,6 +2731,8 @@ selection-background-color: #ccc;</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="recources/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

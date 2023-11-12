@@ -69,6 +69,16 @@ class ApiInterface(QObject):
         except Exception as err:
             console.print_exception()
 
+    #
+    def get_username(self):
+        return self.username
+
+    def get_password(self):
+        return self.password
+
+    def get_auth_key(self):
+        return self.auth_key
+
     # ########################################################################################### #
     # URL ####################################################################################### #
     # ########################################################################################### #
@@ -286,6 +296,12 @@ class ModbusInterface(QObject):
 
         except Exception as err:
             console.print_exception()
+
+    def get_ip(self):
+        return self.ip
+
+    def get_start_addr(self):
+        return self.modbus_start_addr - 999
 
     # ########################################################################################### #
     # Connection ################################################################################ #
@@ -509,6 +525,20 @@ class MirInterface(QObject):
     def set_modbus_start_addr(self, addr_=1000):
         try:
             self.MODBUS_INTERFACE.set_start_address(addr_)
+        except Exception as err:
+            console.print_exception()
+
+    def get_config(self):
+        try:
+            config_ = {
+                "ip": self.MODBUS_INTERFACE.get_ip().strip(),
+                "start_addr": self.MODBUS_INTERFACE.get_start_addr(),
+                "username": self.API_INTERFACE.get_username().strip(),
+                "password": self.API_INTERFACE.get_password().strip(),
+                "auth_key": self.API_INTERFACE.get_auth_key().strip(),
+            }
+
+            return config_
         except Exception as err:
             console.print_exception()
 

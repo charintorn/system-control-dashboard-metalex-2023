@@ -8,7 +8,7 @@ from ui.mission_dashboard_widget import Ui_MissionDashboardWidget
 from ui.MirUiInterface import MirUiInterface
 from ui.UrUiInterface import UrUiInterface
 
-# from ui.resources import resources_rc
+from ui.resources import resources
 
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QWidget
 from PyQt5.QtCore import pyqtSignal, pyqtSlot
@@ -50,9 +50,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.urInterface_3,
             ],
         )
+        # save config
+        self.DATABASE.get_mir_config = self.mirInterface.get_config
+        self.DATABASE.get_ur_1_config = self.urInterface_1.get_config
+        self.DATABASE.get_ur_2_config = self.urInterface_2.get_config
+        self.DATABASE.get_ur_3_config = self.urInterface_3.get_config
 
         ##### Actions #####
         self.actionFile_load.triggered.connect(self.DATABASE.load)
+        self.actionFile_save.triggered.connect(self.DATABASE.save)
         self.actionFile_exit.triggered.connect(QApplication.instance().quit)
 
         ##### UIs #####
