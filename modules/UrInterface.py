@@ -83,6 +83,7 @@ class UrInterface(QObject):
 
     def set_input_NOs(self, NOs_=[0, 1, 2, 3]):
         try:
+            # self.logger.info(f"set_input_NOs: {NOs_}")
             self.input_NOs = NOs_
 
         except Exception as err:
@@ -90,13 +91,11 @@ class UrInterface(QObject):
 
     def get_config(self):
         try:
-            config_ = (
-                {
-                    "ip": self.ip,
-                    "types": self.input_types,
-                    "NO": self.input_NOs,
-                },
-            )
+            config_ = {
+                "ip": self.ip,
+                "types": self.input_types,
+                "NO": self.input_NOs,
+            }
 
             return config_
 

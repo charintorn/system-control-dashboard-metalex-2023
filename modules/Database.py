@@ -72,6 +72,9 @@ class Database(QObject):
             ur_2_config_ = self.get_ur_2_config()
             ur_3_config_ = self.get_ur_3_config()
             #
+            # console.log(f"mir_config_: {mir_config_}")
+            # console.log(f"ur_1_config_: {ur_1_config_}")
+            #
             settings_ = {
                 "mir": mir_config_,
                 "ur": [ur_1_config_, ur_2_config_, ur_3_config_],
@@ -79,7 +82,6 @@ class Database(QObject):
             #
             self.logger.info(f"\t > settings: {settings_}")
 
-            return None
             # Save the settings to a JSON file
             with open(self.settings_file_path, "w") as settings_file:
                 json.dump(settings_, settings_file, indent=4)

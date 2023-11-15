@@ -69,7 +69,32 @@ class UrUiInterface(QObject):
 
             ##### UI Signals/Slots #####
             self.btn_connect.clicked.connect(self.on_connect_btn_clicked)
-
+            self.input_ip.textChanged.connect(self.on_input_ip_changed)
+            self.comboBox_feed_in_type_8266.currentIndexChanged.connect(
+                self.on_input_type_changed
+            )
+            self.comboBox_feed_in_type_32.currentIndexChanged.connect(
+                self.on_input_type_changed
+            )
+            self.comboBox_feed_out_type_8266.currentIndexChanged.connect(
+                self.on_input_type_changed
+            )
+            self.comboBox_feed_out_type_32.currentIndexChanged.connect(
+                self.on_input_type_changed
+            )
+            #
+            self.comboBox_feed_in_NO_8266.currentIndexChanged.connect(
+                self.on_input_NO_changed
+            )
+            self.comboBox_feed_in_NO_32.currentIndexChanged.connect(
+                self.on_input_NO_changed
+            )
+            self.comboBox_feed_out_NO_8266.currentIndexChanged.connect(
+                self.on_input_NO_changed
+            )
+            self.comboBox_feed_out_NO_32.currentIndexChanged.connect(
+                self.on_input_NO_changed
+            )
             ##### Custom Signals/Slots #####
             self.MAINWINDOW.DATABASE.settingLoadedSignal.connect(self.settingLoadedSlot)
 
@@ -157,27 +182,9 @@ class UrUiInterface(QObject):
             #
             #
             if not self.connected:
-                self.urInterface.set_ip(ip_=self.input_ip.text().strip())
                 self.urInterface.set_frequency(
                     frequency_=float(self.input_frequency.text().strip())
                 )
-                self.urInterface.set_input_types(
-                    [
-                        self.comboBox_feed_in_type_8266.currentText().strip(),
-                        self.comboBox_feed_in_type_32.currentText().strip(),
-                        self.comboBox_feed_out_type_8266.currentText().strip(),
-                        self.comboBox_feed_out_type_32.currentText().strip(),
-                    ]
-                )
-                self.urInterface.set_input_NOs(
-                    [
-                        int(self.comboBox_feed_in_NO_8266.currentText().strip()),
-                        int(self.comboBox_feed_in_NO_32.currentText().strip()),
-                        int(self.comboBox_feed_out_NO_8266.currentText().strip()),
-                        int(self.comboBox_feed_out_NO_32.currentText().strip()),
-                    ]
-                )
-
                 #
                 self.urInterface.connect()
             else:
@@ -185,6 +192,43 @@ class UrUiInterface(QObject):
             #
             #
             #
+        except Exception as err:
+            console.print_exception()
+
+    @pyqtSlot(str)
+    def on_input_ip_changed(self, text):
+        try:
+            self.urInterface.set_ip(ip_=self.input_ip.text().strip())
+        except Exception as err:
+            console.print_exception()
+
+    @pyqtSlot(int)
+    def on_input_type_changed(self, idx):
+        try:
+            # console.log(f"on_input_type_changed: {idx}")
+            self.urInterface.set_input_types(
+                [
+                    self.comboBox_feed_in_type_8266.currentText().strip(),
+                    self.comboBox_feed_in_type_32.currentText().strip(),
+                    self.comboBox_feed_out_type_8266.currentText().strip(),
+                    self.comboBox_feed_out_type_32.currentText().strip(),
+                ]
+            )
+        except Exception as err:
+            console.print_exception()
+
+    @pyqtSlot(int)
+    def on_input_NO_changed(self, idx):
+        try:
+            # console.log(f"on_input_NO_changed: {idx}")
+            self.urInterface.set_input_NOs(
+                [
+                    int(self.comboBox_feed_in_NO_8266.currentText().strip()),
+                    int(self.comboBox_feed_in_NO_32.currentText().strip()),
+                    int(self.comboBox_feed_out_NO_8266.currentText().strip()),
+                    int(self.comboBox_feed_out_NO_32.currentText().strip()),
+                ]
+            )
         except Exception as err:
             console.print_exception()
 
