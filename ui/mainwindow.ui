@@ -14,7 +14,7 @@
    <string>AAE System Control Dashboard - Metalex 2023</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="recources/resources.qrc">
+   <iconset resource="resources/resources.qrc">
     <normaloff>:/logo/logo/metalex.jpg</normaloff>:/logo/logo/metalex.jpg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -2732,7 +2732,7 @@ selection-background-color: #ccc;</string>
   </action>
  </widget>
  <resources>
-  <include location="recources/resources.qrc"/>
+  <include location="resources/resources.qrc"/>
  </resources>
  <connections/>
 </ui>

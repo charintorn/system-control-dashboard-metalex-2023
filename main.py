@@ -170,8 +170,29 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         ### Modules ###
 
         ### Signal/SLot ###
+        self.pushButton_setting_ur_connect_all.clicked.connect(self.connect_all)
+        self.pushButton_setting_ur_disconnect_all.clicked.connect(self.disconnect_all)
 
-    ### Update UIs ###
+    ### Methods ###
+    def connect_all(self):
+        try:
+            self.mirInterface.connect()
+            self.urInterface_1.connect()
+            self.urInterface_2.connect()
+            self.urInterface_3.connect()
+            pass
+        except Exception as err:
+            console.print_exception()
+
+    def disconnect_all(self):
+        try:
+            self.mirInterface.disconnect()
+            self.urInterface_1.disconnect()
+            self.urInterface_2.disconnect()
+            self.urInterface_3.disconnect()
+            pass
+        except Exception as err:
+            console.print_exception()
 
 
 if __name__ == "__main__":

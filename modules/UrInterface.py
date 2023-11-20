@@ -119,6 +119,9 @@ class UrInterface(QObject):
 
             self.logger.info(f"connect(): to {self.NAME} : {uri_} ...")
 
+            if self.connected:
+                return None
+
             self.client = ModbusTcpClient(uri_)
             self.client.connect()
 
@@ -139,6 +142,10 @@ class UrInterface(QObject):
     def disconnect(self):
         try:
             self.logger.info(f"disconnect(): from {self.NAME} ...")
+
+            if not self.connected:
+                return None
+
             self.read_thread_enable = False
 
             while self.read_thread_working:

@@ -195,6 +195,7 @@ class ModbusInterface(QObject):
             ### local variables ###
             self.ip = ip_
             self.frequency = frequency_
+            self.connected = False
             #
             self.modbus_start_addr = start_addr_
             self.modbus_qty = qty_
@@ -314,6 +315,9 @@ class ModbusInterface(QObject):
                 f"connect(): to {self.ip}, {self.modbus_start_addr}, {self.modbus_qty}, {self.frequency} ..."
             )
 
+            if self.connected:
+                return None
+
             self.client = ModbusTcpClient(uri_)
             self.client.connect()
 
@@ -334,6 +338,10 @@ class ModbusInterface(QObject):
     def disconnect(self):
         try:
             self.logger.info(f"disconnect(): from {self.NAME} ...")
+
+            if not self.connected:
+                return None
+
             self.modbus_thread_enable = False
 
             while self.modbus_thread_working:
